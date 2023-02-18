@@ -1,0 +1,21 @@
+
+---
+  - name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+    hosts: localhost
+    become: true
+    tasks:
+      - name: user example present
+        ansible.builtin.user:
+          name: johnd
+          password: "{{ 'password' | password_hash('sha512', 'mysecretsalt') }}"
+          groups:
+            - wheel
+            - adm
+          state: "present"
+          shell: "/bin/bash"
+          createhome: true
+          home: "/home/johnd"
+          comment: "ansible example"
+      
+      
+
