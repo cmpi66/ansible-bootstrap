@@ -13,7 +13,7 @@
       - install
       - core
   tasks:
-    - include_tasks: tasks_import/ssh.yml
+    - include: tasks/ssh.yml
     # - include: tasks/git-setup.yml
     # - include: tasks/core-setup.yml
     # - include: tasks/node-setup.yml
