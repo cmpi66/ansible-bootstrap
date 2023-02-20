@@ -30,13 +30,6 @@
           groups:
             - wheel
           createhome: true
-      - name: add 'aur_builder to sudoers'
-        become: true
-        ansible.builtin.linefile:
-          path: /etc/sudoers.d/11-install-aur_builder
-          line: 'aur_builder ALL=(ALL) NOPASSWD: /usr/bin/pacman'
-          create: yes
-          validate: 'visudo -cf %s'
       
       
 
