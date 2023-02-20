@@ -1,4 +1,4 @@
-- name: add 'aur_builder to sudoers'
+- name: add aur_builder to sudoers
   hosts: localhost
   become: true
   ansible.builtin.linefile:
