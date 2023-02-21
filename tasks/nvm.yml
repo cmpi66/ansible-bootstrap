@@ -4,7 +4,7 @@
     - install
     - nvm
 - name: Run nvm command
-  shell: "nvm install --lts"
+  shell: "fish && nvm install --lts"
   tags:
     - install
     - nvm
