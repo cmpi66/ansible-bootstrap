@@ -19,7 +19,7 @@
     # - include: tasks/npm-packages.yml
     # - include: tasks/zsh-setup.yml
     - include: tasks/arch-keyring.yml
-    - include: tasks/remove-dirs.yml
+    - include: tasks/dirs.yml
     - include: tasks/sudo.yml
     - include: tasks/remove-sudo.yml
     - include: tasks/nvim-setup.yml

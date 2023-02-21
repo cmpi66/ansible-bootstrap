@@ -2,9 +2,9 @@
   shell: rm -rf ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
   tags:
     - install
-    - remove-dirs
+    - dirs
 - name: Create new dirs 
   shell: mkdir ~/dl ~/dl/git-clones ~/media ~/copywriting ~/.local ~/.local/.src ~/repos 
   tags:
     - install
-    - remove-dirs
+    - dirs
