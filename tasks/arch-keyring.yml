@@ -14,7 +14,7 @@
 - name: Run pacma -Sy
   become: true
   pacman:
-    update_cache: yes
+    update_cache: true
 - name: Append keyring
   become: true
   shell: pacman-key --populate archlinux 

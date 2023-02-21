@@ -1,8 +1,0 @@
-- name: Install package from AUR using a Pacman compatible AUR helper
-  community.general.pacman:
-    name: anki
-    state: present
-    executable: yay
-  tags:
-    - install
-    - aur
