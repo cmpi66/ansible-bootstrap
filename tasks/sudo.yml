@@ -1,6 +1,6 @@
 - name: sudo test
   become: true
-  shell: "echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /etc/fstab"
+  shell: "echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
   tags:
     - install
     - sudo
