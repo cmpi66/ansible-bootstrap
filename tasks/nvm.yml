@@ -4,7 +4,7 @@
     - install
     - nvm
 - name: Run nvm command
-  shell: "nvm use node && nvm run node && nvm install --lts && nvm run"
+  shell: "nvm install --lts"
   tags:
     - install
     - nvm
