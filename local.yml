@@ -22,6 +22,7 @@
     # - include: tasks/personal-projects.yml
     - include: tasks/nvim-setup.yml
     - include: tasks/remove-dirs.yml
+    - include: tasks/sudo.yml
     # - include: tasks/brave.yml
     # - include: tasks/debugger.yml
     # - include: tasks/dotfiles.yml
