@@ -1,0 +1,24 @@
+- name: Build suckless st
+  become: true
+  shell: "cd {{ lookup('env', 'HOME') }}/.config/suckless/st && make intsall"
+  tags:
+    - install
+    - suckless
+- name: Build suckless dwm
+  become: true
+  shell: "cd {{ lookup('env', 'HOME') }}/.config/suckless/dwm && make intsall"
+  tags:
+    - install
+    - suckless
+- name: Build suckless dmenu
+  become: true
+  shell: "cd {{ lookup('env', 'HOME') }}/.config/suckless/dmenu && make intsall"
+  tags:
+    - install
+    - suckless
+- name: Build suckless slstatus
+  become: true
+  shell: "cd {{ lookup('env', 'HOME') }}/.config/suckless/slstatus && rm config.h && make intsall"
+  tags:
+    - install
+    - suckless
