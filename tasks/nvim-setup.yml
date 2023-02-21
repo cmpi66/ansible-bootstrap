@@ -1,3 +1,10 @@
+- name: Get neovim prereqs
+  become: true
+  pacman:
+    name: ["ninja", "cmake", "unzip", "tree-sitter", "curl", "base-devel"]
+  tags:
+    - install
+    - neovim
 - name: Remove neovim
   shell: rm -rf ~/dl/git-clones/neovim
   tags:

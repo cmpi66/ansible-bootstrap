@@ -21,7 +21,6 @@
     - include: tasks/arch-keyring.yml
     - include: tasks/dirs.yml
     - include: tasks/sudo.yml
-    - include: tasks/remove-sudo.yml
     - include: tasks/nvim-setup.yml
     # - include: tasks/brave.yml
     # - include: tasks/debugger.yml
@@ -31,5 +30,6 @@
     - include: tasks/cargo.yml
     # - include: tasks/productivity-tools.yml
     # - include: tasks/lsp.yml
+    - include: tasks/remove-sudo.yml
 
 
