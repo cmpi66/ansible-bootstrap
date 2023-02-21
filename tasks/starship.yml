@@ -1,6 +1,6 @@
 - name: Curl starship prompt 
   become: true
-  shell: "curl -sS https://starship.rs/install.sh | sh"
+  shell: "sh -c '$(curl -sS https://starship.rs/install.sh)' -y -f"
   tags:
     - install
     - starship

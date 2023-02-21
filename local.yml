@@ -28,7 +28,7 @@
     - include: tasks/dotfiles.yml
     - include: tasks/suckless.yml
     - include: tasks/nvm.yml
-    - include: tasks/gnupg.yml
+    # - include: tasks/gnupg.yml
     - include: tasks/starship.yml
     - include: tasks/moz.yml
     - include: tasks/rustup.yml
