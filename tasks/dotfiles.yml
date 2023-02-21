@@ -1,5 +1,6 @@
 - name: Installing stow
-  pacman: name=stow
+  pacman: 
+    name: stow
   tags:
     - install
     - dotfiles
