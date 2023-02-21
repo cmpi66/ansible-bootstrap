@@ -1,16 +1,23 @@
-- name: Update to us mirrors
+- name: Install keyring
   become: true
   pacman:  
     name: archlinux-keyring
-  # shell: reflector --verbose -c US --protocol https --sort score --latest 20 --download-timeout 5 --save /etc/pacman.d/mirrorlist
   tags:
     - install
     - keyring
-# - name: Sync new keyring and mirrors
-#   become: true
-#   pacman:
-#     update_cache: yes
-#   shell: pacman-key --populate archlinux 
-#   tags:
-#     - install
-#     - keyring
+- name: Update to us mirrors
+  become: true
+  shell: reflector --verbose -c US --protocol https --sort score --latest 20 --download-timeout 5 --save /etc/pacman.d/mirrorlist
+  tags:
+    - install
+    - keyring
+- name: Run pacma -Sy
+  become: true
+  pacman:
+    update_cache: yes
+- name: Append keyring
+  become: true
+  shell: pacman-key --populate archlinux 
+  tags:
+    - install
+    - keyring
