@@ -1,0 +1,7 @@
+## remove wheel no pass after aur pacakges are installed
+- name: remove wheel perms
+  become: true
+  shell: "sed -i '$d' >> /etc/sudoers"
+  tags:
+    - install
+    - remove-sudo

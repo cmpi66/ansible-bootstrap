@@ -1,7 +1,0 @@
-- name: Validate the sudoers file before saving
-  ansible.builtin.lineinfile:
-    path: /etc/sudoers
-    state: present
-    regexp: '^%ADMIN ALL='
-    line: '%ADMIN ALL=(ALL) NOPASSWD: ALL'
-    validate: /usr/sbin/visudo -cf %s

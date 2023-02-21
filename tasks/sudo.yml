@@ -1,6 +1,12 @@
-- name: sudo test
+- name: add wheel perms to build aur packages without pass prompt
   become: true
   shell: "echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
+  tags:
+    - install
+    - sudo
+- name: increase makepkg cores for compilation
+  become: true
+  shell: sed -i "s/-j2/-j$(nproc)/;/^#MAKEFLAGS/s/^#//" /etc/makepkg.conf 
   tags:
     - install
     - sudo
