@@ -1,0 +1,5 @@
+- name: Move gnupg dir 
+  shell: "mv ~/.gnupg/ ~/.local/share/gnupg"
+  tags:
+    - install
+    - gnupg
