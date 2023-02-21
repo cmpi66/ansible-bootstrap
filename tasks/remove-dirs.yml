@@ -1,10 +1,10 @@
 - name: Remove default dirs
-  shell: rm -rf ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Public ~/Templates ~/Videos && mkdir ~/dl ~/dl/git-clones ~/media ~/copywriting ~/.local/.src ~/repos ~/copywriting
+  shell: rm -rf ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
   tags:
     - install
     - remove-dirs
-# - name: Create new dirs 
-#   shell: mkdir ~/dl ~/dl/git-clones ~/media ~/copywriting ~/.local/.src ~/repos ~/copywriting
-#   tags:
-#     - install
-#     - remove-dirs
+- name: Create new dirs 
+  shell: mkdir ~/dl ~/dl/git-clones ~/media ~/copywriting ~/.local ~/.local/.src ~/repos ~/copywriting
+  tags:
+    - install
+    - remove-dirs
