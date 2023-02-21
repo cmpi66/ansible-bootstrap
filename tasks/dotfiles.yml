@@ -1,0 +1,25 @@
+- name: Installing stow
+  pacman: name=stow
+  tags:
+    - install
+    - dotfiles
+    - stow
+- name: Cloning dotfiles
+  ansible.builtin.git:
+    repo: 'git@gitlab.com:chris-m/dotfiles.git'
+    dest: "{{ lookup('env', 'HOME') }}/repos/dotfiles"
+    recursive: yes
+    update: yes
+    accept_hostkey: yes
+    version: master
+  tags:
+    - install
+    - dotfiles
+    - stow
+- name: Stow dotfiles
+  shell: cd $HOME/repos/dotfiles && ./arch
+  tags:
+    - install
+    - dotfiles
+    - stow
+
