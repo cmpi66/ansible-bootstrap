@@ -5,7 +5,7 @@
     - install
     - nix
 - name: Enable experimental flakes
-  shell: echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
+  shell: mkdir ~/.config/nix && echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
   tags:
     - install
     - nix
