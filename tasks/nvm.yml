@@ -4,7 +4,7 @@
     - install
     - nvm
 - name: Run nvm command
-  shell: "source ~/.config/fish/config.fish && nvm use node && nvm run node && nvm install --lts && nvm run"
+  shell: "nvm use node && nvm run node && nvm install --lts && nvm run"
   tags:
     - install
     - nvm
