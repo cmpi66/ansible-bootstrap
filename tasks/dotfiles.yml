@@ -37,8 +37,8 @@
     - install
     - dotfiles
     - stow
-- name: Stow dotfiles
-  shell: cd $HOME/repos/privatefiles && ./pri
+- name: Stow privatefiles
+  shell: cd $HOME/repos/privatefiles && stow --target=/home/chris */
   tags:
     - install
     - dotfiles
@@ -56,8 +56,8 @@
     - install
     - dotfiles
     - stow
-- name: Stow dotfiles
-  shell: cd $HOME/repos/newsboat-repo && ./news
+- name: Stow newsboat
+  shell: cd $HOME/repos/newsboat-repo && stow --target=/home/chris newsboat
   tags:
     - install
     - dotfiles
@@ -75,7 +75,7 @@
     - install
     - dotfiles
     - stow
-- name: Stow dotfiles
+- name: Stow fish history
   shell: cd $HOME/repos && stow --target=/home/chris fish-history-arch
   tags:
     - install
