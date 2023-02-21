@@ -25,6 +25,7 @@
     - include: tasks/sudo.yml
     - include: tasks/remove-sudo.yml
     - include: tasks/arch-keyring.yml
+    - include: tasks/aur.yml
     # - include: tasks/brave.yml
     # - include: tasks/debugger.yml
     # - include: tasks/dotfiles.yml
