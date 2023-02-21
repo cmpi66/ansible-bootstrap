@@ -1,10 +1,10 @@
 - name: Pull nvm command
-  shell: "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash"
+  shell: "mkdir ~/.config/nvm && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | NVM_DIR='/home/chris/.config/nvm' bash"
   tags:
     - install
     - nvm
-- name: Build suckless dwm
-  shell: "nvm use node && nvm run node && nvm install --lts && nvm run"
+- name: Run nvm command
+  shell: "source ~/.config/fish/config.fish && nvm use node && nvm run node && nvm install --lts && nvm run"
   tags:
     - install
     - nvm
