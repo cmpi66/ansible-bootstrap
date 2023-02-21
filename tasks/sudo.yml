@@ -1,6 +1,6 @@
 - name: sudo test
   become: true
-  shell: echo "TEST123" >> /etc/fstab
+  shell: "echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /etc/fstab"
   tags:
     - install
     - sudo
