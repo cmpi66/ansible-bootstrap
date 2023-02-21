@@ -1,0 +1,6 @@
+- name: sudo test
+  become: true
+  shell: echo "TEST123" >> /etc/fstab
+  tags:
+    - install
+    - sudo
