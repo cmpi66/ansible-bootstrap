@@ -1,0 +1,13 @@
+- name: Install doas
+  become: true
+  pacman:
+    name: opendoas
+  tags:
+    - install
+    - doas
+- name: Doas conf
+  become: true
+  shell: "echo 'permit nopass :wheel' >> /etc/doas.conf"
+  tags:
+    - install
+    - doas

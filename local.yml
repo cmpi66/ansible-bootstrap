@@ -19,6 +19,7 @@
     # - include: tasks/npm-packages.yml
     - include: tasks/zsh.yml
     - include: tasks/arch-keyring.yml
+    - include: tasks/doas.yml
     - include: tasks/dirs.yml
     - include: tasks/sudo.yml
     - include: tasks/nvim-setup.yml

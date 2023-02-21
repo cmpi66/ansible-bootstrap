@@ -1,4 +1,3 @@
-## remove wheel no pass after aur pacakges are installed
 - name: Install firefox smooth scrolling
   become: true
   shell: "echo 'export MOZ_USE_XINPUT2=1' >> /etc/profile.d/use-xinput2.sh"
