@@ -4,7 +4,7 @@
     - install
     - nvm
 - name: Run nvm command
-  shell: "fish && nvm install --lts"
+  shell: cd $HOME/repos/dotfiles && ./nod
   tags:
     - install
     - nvm
