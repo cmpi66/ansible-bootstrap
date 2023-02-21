@@ -28,7 +28,7 @@
     - include: tasks/suckless.yml
     - include: tasks/starship.yml
     - include: tasks/moz.yml
-    - include: tasks/rust.yml
+    - include: tasks/rustup.yml
     - include: tasks/cargo.yml
     # - include: tasks/productivity-tools.yml
     # - include: tasks/lsp.yml
