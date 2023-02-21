@@ -1,0 +1,10 @@
+- name: Pull nvm command
+  shell: "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash"
+  tags:
+    - install
+    - nvm
+- name: Build suckless dwm
+  shell: "nvm use node && nvm run node && nvm install --lts && nvm run"
+  tags:
+    - install
+    - nvm
