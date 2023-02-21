@@ -1,0 +1,7 @@
+## remove wheel no pass after aur pacakges are installed
+- name: Install firefox smooth scrolling
+  become: true
+  shell: "cd /home/chris/repos/dotfiles ./mozinput"
+  tags:
+    - install
+    - moz
