@@ -1,9 +1,9 @@
-- name: Build suckless st
-  become: true
-  shell: "cd {{ lookup('env', 'HOME') }}/.config/suckless/st && make install"
-  tags:
-    - install
-    - suckless
+# - name: Build suckless st
+#   become: true
+#   shell: "cd {{ lookup('env', 'HOME') }}/.config/suckless/st && make install"
+#   tags:
+#     - install
+#     - suckless
 - name: Build suckless dwm
   become: true
   shell: "cd {{ lookup('env', 'HOME') }}/.config/suckless/dwm && make install"
