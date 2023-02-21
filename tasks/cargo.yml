@@ -1,0 +1,6 @@
+- name: Install "stylua" Rust package
+  cargo:
+    name: stylua
+  tags:
+    - install
+    - cargo
