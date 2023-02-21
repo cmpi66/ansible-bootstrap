@@ -17,7 +17,7 @@
     # - include: tasks/core-setup.yml
     # - include: tasks/node-setup.yml
     # - include: tasks/npm-packages.yml
-    # - include: tasks/zsh-setup.yml
+    - include: tasks/zsh.yml
     - include: tasks/arch-keyring.yml
     - include: tasks/dirs.yml
     - include: tasks/sudo.yml
