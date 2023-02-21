@@ -26,7 +26,10 @@
     # - include: tasks/debugger.yml
     - include: tasks/dotfiles.yml
     - include: tasks/suckless.yml
+    - include: tasks/starship.yml
     - include: tasks/moz.yml
+    - include: tasks/rust.yml
+    - include: tasks/rust.yml
     - include: tasks/cargo.yml
     # - include: tasks/productivity-tools.yml
     # - include: tasks/lsp.yml
