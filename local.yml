@@ -32,6 +32,7 @@
     - include: tasks/starship.yml
     - include: tasks/moz.yml
     - include: tasks/rustup.yml
+    - include: tasks/nix.yml
     - include: tasks/cargo.yml
     # - include: tasks/productivity-tools.yml
     # - include: tasks/lsp.yml

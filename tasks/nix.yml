@@ -1,0 +1,16 @@
+
+- name: Build nix 
+  shell: curl -L https://nixos.org/nix/install | sh
+  tags:
+    - install
+    - nix
+- name: Enable experimental flakes
+  shell: echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
+  tags:
+    - install
+    - nix
+- name: Install emanote
+  shell: nix-env -iA nixpkgs.emanote
+  tags:
+    - install
+    - nix
