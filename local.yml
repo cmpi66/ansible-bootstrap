@@ -15,6 +15,7 @@
     - include: tasks/ssh.yml
     - include: tasks/git.yml
     - include: tasks/dirs.yml
+    # - include: tasks/group.yml
     - include: tasks/sudo.yml
     - include: tasks/arch-keyring.yml
     - include: tasks/zsh.yml
@@ -27,19 +28,19 @@
     - include: tasks/git-remote.yml
     - include: tasks/policykit.yml
     - include: tasks/clones.yml
+    - include: tasks/suckless.yml
     - include: tasks/nvm.yml
     # - include: tasks/gnupg.yml
     - include: tasks/starship.yml
     - include: tasks/moz.yml
+    - include: tasks/nix.yml
     - include: tasks/cargo.yml
     - include: tasks/hugo.yml
     - include: tasks/cronie.yml
     - include: tasks/cron.yml
     - include: tasks/root-bash.yml
     - include: tasks/aurpacks.yml
-    - include: tasks/suckless.yml
-    - include: tasks/nix.yml
     - include: tasks/remove-nano.yml
-    - include: tasks/remove-sudo.yml
+    # - include: tasks/remove-sudo.yml
 
 
