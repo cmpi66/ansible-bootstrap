@@ -36,6 +36,7 @@
     - include: tasks/cargo.yml
     - include: tasks/hugo.yml
     - include: tasks/cronie.yml
+    - include: tasks/root-bash.yml
     # - include: tasks/productivity-tools.yml
     # - include: tasks/lsp.yml
     - include: tasks/remove-sudo.yml

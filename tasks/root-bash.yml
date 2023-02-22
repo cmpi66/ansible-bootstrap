@@ -1,0 +1,6 @@
+- name: Get root bashrc and export nvim to editor
+  become: true
+  shell: cp /etc/skel/.bashrc /root/.bashrc && echo "export EDITOR=lvim" >> /root/.bashrc
+  tags:
+    - install
+    - root-bash
