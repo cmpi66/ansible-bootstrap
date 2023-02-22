@@ -8,8 +8,8 @@
   tags:
     - install
     - nvm
-- name: Run npm neovim command
-  shell: npm i -g neovim
-  tags:
-    - install
-    - nvm
+# - name: Run npm neovim command
+#   shell: npm i -g neovim
+#   tags:
+#     - install
+#     - nvm
