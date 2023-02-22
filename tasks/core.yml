@@ -10,7 +10,7 @@
 - name: Install System Packages 2 
   become: true
   pacman:
-    name: [ "gufw", "inkscape", "iperf", "languagetool", "lazygit", "libmythes", "libreoffice-fresh", "libsecret", "luacheck", "lxappearance", "lynx", "maim", "moreutils", "mpc", "mpd", "mpv", "mtr", "mythes-en", "ncdu", "ncmcpp", "net-tools", "newsboat", "okular", "pandoc-cli", "paru", "pcmanfm", "procs", "pulsemixer", "pydf", "python-black", "python-netaddr", "python-pynvim"]
+    name: [ "gufw", "inkscape", "iperf", "languagetool", "lazygit", "libmythes", "libreoffice-fresh", "libsecret", "luacheck", "lxappearance", "lynx", "maim", "moreutils", "mpc", "mpd", "mpv", "mtr", "mythes-en", "ncdu", "ncmpcpp", "net-tools", "newsboat", "okular", "pandoc-cli", "paru", "pcmanfm", "procs", "pulsemixer", "pydf", "python-black", "python-netaddr", "python-pynvim"]
   tags:
     - install
     - neovim
