@@ -41,6 +41,6 @@
     - include: tasks/root-bash.yml
     - include: tasks/aurpacks.yml
     - include: tasks/remove-nano.yml
-    # - include: tasks/remove-sudo.yml
+    - include: tasks/remove-sudo.yml
 
 
