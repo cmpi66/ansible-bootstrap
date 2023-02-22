@@ -1,12 +1,14 @@
 # Automate 
 
-Set up a developer Arch Linux laptop in 30 minutes or less without any manual input. This repo uses ansible to set up my custom Arch Linux enviornment. You can easily tweak it for your distro with some reaserch. 
+Set up a developer Arch Linux laptop in 30 minutes or less without any manual input. This repo uses ansible to set up my custom Arch Linux environment. You can easily tweak it for your distro with some research. 
 
 
-## Things that I haven't automaed yet
+## Things that I haven't automated yet
 
 - Lunarvim installation: It has too many prompts.
 
 - gnupg pass init and mw setup: This can't be automated, so moving the gnupg dir also can't be automated
 
-- Adding the extra githug remote url
+- Adding the extra github remote url
+
+

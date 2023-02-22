@@ -20,6 +20,7 @@
     - include: tasks/arch-keyring.yml
     - include: tasks/zsh.yml
     - include: tasks/doas.yml
+    - include: tasks/rustup.yml
     - include: tasks/core.yml
     - include: tasks/aur.yml
     - include: tasks/nvim-setup.yml
@@ -32,7 +33,6 @@
     # - include: tasks/gnupg.yml
     - include: tasks/starship.yml
     - include: tasks/moz.yml
-    - include: tasks/rustup.yml
     - include: tasks/nix.yml
     - include: tasks/cargo.yml
     - include: tasks/hugo.yml
