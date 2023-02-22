@@ -4,3 +4,15 @@
   tags:
     - install
     - root-bash
+- name: Get root bashrc and export nvim to editor
+  become: true
+  shell: echo "export VISUAL=lvim" >> /root/.bashrc
+  tags:
+    - install
+    - root-bash
+- name: Get root bashrc and export nvim to editor
+  become: true
+  shell: echo "alias nvim='lvim'" >> /root/.bashrc
+  tags:
+    - install
+    - root-bash
