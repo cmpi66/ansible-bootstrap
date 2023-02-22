@@ -16,7 +16,7 @@
     - gits
 - name: Run clipmenu
   become: true
-  shell: cd ~/dl/git-clones/clipmenu/ && make install
+  shell: cd home/chris/dl/git-clones/clipmenu/ && make install
   tags:
     - install
     - dotfiles
