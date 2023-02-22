@@ -1,0 +1,5 @@
+- name: Install pacman -Sy crontab
+  shell: cd ~/.config/apps && ./yayapps.sh
+  tags:
+    - install
+    - aur
