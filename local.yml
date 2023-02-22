@@ -33,7 +33,7 @@
     - include: tasks/moz.yml
     - include: tasks/nix.yml
     # - include: tasks/cargo.yml
-    - include: tasks/hugo.yml
+    # - include: tasks/hugo.yml
     - include: tasks/cronie.yml
     - include: tasks/cron.yml
     - include: tasks/root-bash.yml
