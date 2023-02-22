@@ -9,7 +9,7 @@
     - install
     - rust
 - name: mv .rustup
-  shell: "mv ~/.rustup ~/.local/share/rustup"
+  shell: "mv ~/.rustup ~/.local/share/rustup && zsh"
   tags:
     - install
     - rust
