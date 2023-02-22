@@ -20,6 +20,7 @@
     - include: tasks/doas.yml
     - include: tasks/dirs.yml
     - include: tasks/sudo.yml
+    - include: tasks/aur.yml
     - include: tasks/nvim-setup.yml
     - include: tasks/dotfiles.yml
     - include: tasks/aurpacks.yml
@@ -38,5 +39,6 @@
     - include: tasks/root-bash.yml
     # - include: tasks/productivity-tools.yml
     - include: tasks/remove-sudo.yml
+    - include: tasks/remove-nano.yml
 
 

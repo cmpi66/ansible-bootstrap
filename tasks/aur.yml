@@ -1,0 +1,6 @@
+- name: Install package from AUR using a Pacman compatible AUR helper
+  community.general.pacman:
+    name: sc-im
+    state: present
+    executable: yay
+    extra_args: --builddir /home/chris/.cache/yay

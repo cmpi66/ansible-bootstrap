@@ -1,0 +1,10 @@
+- name: Remove nano
+  become: true
+  pacman:
+    name: ["nano", "nano-syntax-highlighting"]
+    state: absent
+    tags:
+      - install
+      - core
+      - nano
+
