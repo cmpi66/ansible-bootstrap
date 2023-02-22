@@ -1,0 +1,27 @@
+- name: add remote dotfiles
+  shell: cd $HOME/repos/dotfiles && git remote add hub git@github.com:cmpi66/dotfiles.git
+  tags:
+    - install
+    - dotfiles
+    - remote
+
+- name: add remote privatefiles
+  shell: cd $HOME/repos/privatefiles && git remote add hub git@github.com:cmpi66/privatefiles.git
+  tags:
+    - install
+    - dotfiles
+    - remote
+
+- name: add remote newsboat
+  shell: cd $HOME/repos/newsboat-repo && git remote add hub git@github.com:cmpi66/newsboat-repo.git
+  tags:
+    - install
+    - dotfiles
+    - remote
+
+- name: add remote fish history
+  shell: cd $HOME/repos/fish-history-arch && git remote add hub git@github.com:cmpi66/fish-history-arch.git
+  tags:
+    - install
+    - dotfiles
+    - remote
