@@ -3,3 +3,13 @@
   tags:
     - install
     - rust
+- name: mv .cargo
+  shell: "mv ~/.cargo ~/.local/share/cargo"
+  tags:
+    - install
+    - rust
+- name: mv .rustup
+  shell: "mv ~/.rustup ~/.local/share/rustup"
+  tags:
+    - install
+    - rust
