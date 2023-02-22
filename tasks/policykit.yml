@@ -1,0 +1,6 @@
+- name: Update policy kit rules
+  become: true
+  shell: "cd ~/repos/dotfiles/polkit && cp * /etc/polkit-1/rules.d/"
+  tags:
+    - install
+    - polkit

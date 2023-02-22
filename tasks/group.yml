@@ -1,0 +1,7 @@
+- name: adding existing user chris to group sudo
+  become: true
+  ansible.builtin.user:
+    name: chris
+    groups: sudo
+    append: true
+
