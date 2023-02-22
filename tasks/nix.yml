@@ -15,7 +15,7 @@
     - install
     - nix
 - name: Install ema note
-  shell: nix-env -iA nixpkgs.emanote
+  shell: cd ~/repos/dotfiles/ && ./ema
   tags:
     - install
     - nix
