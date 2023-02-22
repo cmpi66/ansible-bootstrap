@@ -27,9 +27,7 @@
     - include: tasks/dotfiles.yml
     - include: tasks/git-remote.yml
     - include: tasks/policykit.yml
-    - include: tasks/aurpacks.yml
     - include: tasks/clones.yml
-    - include: tasks/suckless.yml
     - include: tasks/nvm.yml
     # - include: tasks/gnupg.yml
     - include: tasks/starship.yml
@@ -40,7 +38,9 @@
     - include: tasks/cronie.yml
     - include: tasks/cron.yml
     - include: tasks/root-bash.yml
+    - include: tasks/aurpacks.yml
+    - include: tasks/suckless.yml
     - include: tasks/remove-nano.yml
-    - include: tasks/remove-sudo.yml
+    # - include: tasks/remove-sudo.yml
 
 
