@@ -1,0 +1,5 @@
+- name: Build hugo
+  shell: gethugo
+  tags:
+    - install
+    - hugo

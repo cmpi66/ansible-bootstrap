@@ -1,0 +1,7 @@
+
+- name: Enable and activate cronie
+  become: true
+  shell: systemctl restart cronie.service && systemctl restart cronie.service
+  tags:
+    - install
+    - doas
