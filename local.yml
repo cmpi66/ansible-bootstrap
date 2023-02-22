@@ -15,7 +15,6 @@
     - include: tasks/ssh.yml
     - include: tasks/git.yml
     - include: tasks/dirs.yml
-    # - include: tasks/group.yml
     - include: tasks/sudo.yml
     - include: tasks/arch-keyring.yml
     - include: tasks/zsh.yml
