@@ -1,6 +1,6 @@
 - name: Install pacman -Sy crontab
   become: true
-  shell: cd ~/repos/dotfiles/ && crontab mycron
+  shell: cd /home/chris/repos/dotfiles/ && crontab mycron
   tags:
     - install
     - cron
