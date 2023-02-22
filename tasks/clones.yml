@@ -1,7 +1,7 @@
 - name: autocpufreq
   ansible.builtin.git:
     repo: 'https://github.com/AdnanHodzic/auto-cpufreq.git'
-    dest: "~/dl/git-clones/"
+    dest: "{{ lookup('env', 'HOME') }}/dl/git-clones/auto-cpufreq"
   tags:
     - install
     - dotfiles
@@ -9,7 +9,7 @@
 - name: clipmenu
   ansible.builtin.git:
     repo: 'https://github.com/cdown/clipmenu.git' 
-    dest: "~/dl/git-clones/"
+    dest: "{{ lookup('env', 'HOME') }}/dl/git-clones/clipmenu"
   tags:
     - install
     - dotfiles
