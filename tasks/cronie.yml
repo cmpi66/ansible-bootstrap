@@ -4,4 +4,4 @@
   shell: systemctl restart cronie.service && systemctl restart cronie.service
   tags:
     - install
-    - doas
+    - cronie
