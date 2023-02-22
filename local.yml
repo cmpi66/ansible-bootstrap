@@ -40,7 +40,6 @@
     - include: tasks/cronie.yml
     - include: tasks/cron.yml
     - include: tasks/root-bash.yml
-    # - include: tasks/productivity-tools.yml
     - include: tasks/remove-nano.yml
     - include: tasks/remove-sudo.yml
 

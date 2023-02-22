@@ -9,6 +9,5 @@ Set up a developer Arch Linux laptop in 30 minutes or less without any manual in
 
 - gnupg pass init and mw setup: This can't be automated, so moving the gnupg dir also can't be automated
 
-- Adding the extra github remote url
 
 
