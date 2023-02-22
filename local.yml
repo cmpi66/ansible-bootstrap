@@ -20,11 +20,11 @@
     - include: tasks/arch-keyring.yml
     - include: tasks/zsh.yml
     - include: tasks/doas.yml
-    - include: tasks/rustup.yml
     - include: tasks/core.yml
     # - include: tasks/aur.yml
     - include: tasks/nvim-setup.yml
     - include: tasks/dotfiles.yml
+    - include: tasks/rustup.yml
     - include: tasks/git-remote.yml
     - include: tasks/policykit.yml
     - include: tasks/clones.yml
