@@ -1,0 +1,24 @@
+- name: autocpufreq
+  ansible.builtin.git:
+    repo: 'https://github.com/AdnanHodzic/auto-cpufreq.git'
+    dest: "~/dl/git-clones/"
+  tags:
+    - install
+    - dotfiles
+    - gits
+- name: clipmenu
+  ansible.builtin.git:
+    repo: 'https://github.com/cdown/clipmenu.git' 
+    dest: "~/dl/git-clones/"
+  tags:
+    - install
+    - dotfiles
+    - gits
+- name: Run clipmenu
+  become: true
+  shell: cd ~/dl/git-clones/clipmenu/ && make install
+  tags:
+    - install
+    - dotfiles
+    - gits
+
