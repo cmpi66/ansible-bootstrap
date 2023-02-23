@@ -13,3 +13,4 @@ Set up a developer Arch Linux laptop in 30 minutes or less without any manual in
 
 - rustup: same as above, some aur package is messing up and I think it has to do with rust
 
+- autocpufreq: another install with too many prompts.
