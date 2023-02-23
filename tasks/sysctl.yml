@@ -16,7 +16,7 @@
   become: true
   ansible.builtin.systemd:
     name: cronie.service
-    state: started
+    state: restarted
     enabled: true
   tags:
     - install
@@ -26,7 +26,7 @@
   become: true
   ansible.builtin.systemd:
     name: bluetooth.service
-    state: started
+    state: restarted
     enabled: true
   tags:
     - install

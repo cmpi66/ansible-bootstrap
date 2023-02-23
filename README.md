@@ -7,7 +7,9 @@ Set up a developer Arch Linux laptop in 30 minutes or less without any manual in
 
 - Lunarvim installation: It has too many prompts.
 
-- gnupg pass init and mw setup: This can't be automated, so moving the gnupg dir also can't be automated
+- gnupg pass init and mw setup: This can't be automated. 
 
-- aur packages: Ill build them after I log in so I can see the output.
+- aur packages: I'll build them after I log in so I can see the output.
+
+- rustup: same as above, some aur package is messing up and I think it has to do with rust
 
