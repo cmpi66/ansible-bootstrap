@@ -1,10 +1,5 @@
-- name: Remove default dirs
-  shell: rm -rf ~/Desktop ~/Documents ~/Downloads ~/Music ~/Pictures ~/Public ~/Templates ~/Videos
-  tags:
-    - install
-    - dirs
-- name: Create new dirs 
-  shell: mkdir ~/dl ~/dl/git-clones ~/media ~/copywriting ~/.local ~/.local/.src ~/repos 
+- name: Remove default dirs and create new dirs
+  shell: "cd ~/repos/dotfiles/ && ./newdirs"
   tags:
     - install
     - dirs
