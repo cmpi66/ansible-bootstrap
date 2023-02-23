@@ -1,0 +1,5 @@
+- name: Set default wallpaper
+  shell: "cd ~/repos/dotfiles/ && ./wall"
+  tags:
+    - install
+    - wall
