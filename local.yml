@@ -27,7 +27,6 @@
     - include: tasks/clones.yml
     - include: tasks/suckless.yml
     - include: tasks/rustup.yml
-    - include: tasks/hugo.yml
     - include: tasks/nvm.yml
     - include: tasks/gnupg.yml
     - include: tasks/starship.yml
