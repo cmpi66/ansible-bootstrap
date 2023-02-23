@@ -1,3 +1,8 @@
+- name: Run gpg cmd so dir can be created 
+  shell: "gpg --list-keys"
+  tags:
+    - install
+    - gnupg
 - name: Move gnupg dir 
   shell: "mv ~/.gnupg/ ~/.local/share/gnupg"
   tags:
