@@ -10,3 +10,9 @@
   tags:
     - install
     - sudo
+- name: Make mnt/share dir
+  become: true
+  shell: mkdir -p /mnt/share
+  tags:
+    - install
+    - sudo
