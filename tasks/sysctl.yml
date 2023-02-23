@@ -1,0 +1,33 @@
+
+# - name: Enable and activate cronie
+#   become: true
+#   shell: systemctl restart cronie.service && systemctl restart cronie.service
+#   tags:
+#     - install
+#     - cronie
+# - name: Enable and activate cronie
+#   become: true
+#   shell: systemctl restart cronie.service && systemctl restart cronie.service
+#   tags:
+#     - install
+#     - cronie
+
+- name: Enable and start cronie
+  become: true
+  ansible.builtin.systemd:
+    name: cronie.service
+    state: started
+    enabled: true
+  tags:
+    - install
+    - sysctl
+
+- name: Enable and start bluetooth
+  become: true
+  ansible.builtin.systemd:
+    name: bluetooth.service
+    state: started
+    enabled: true
+  tags:
+    - install
+    - sysctl
