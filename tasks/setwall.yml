@@ -6,7 +6,7 @@
 
 - name: Set default wallpaper
   ansible.builtin.script:
-    cmd: /home/chris/.local/bin/setbg /home/chris/repos/dotfiles/default.jpg
+    cmd: /home/chris/.local/bin/setbg ./default.jpg
   tags:
     - install
     - wall

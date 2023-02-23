@@ -36,7 +36,7 @@
     - include: tasks/root-bash.yml
     - include: tasks/sysctl.yml
     - include: tasks/cron.yml
-    # - include: tasks/setwall.yml
+    - include: tasks/setwall.yml
     # - include: tasks/aurpacks.yml
     # - include: tasks/remove-sudo.yml
 
