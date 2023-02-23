@@ -3,8 +3,7 @@
   pacman:
     name: ["nano", "nano-syntax-highlighting"]
     state: absent
-    tags:
-      - install
-      - core
-      - nano
-
+  tags:
+    - install
+    - core
+    - nano
