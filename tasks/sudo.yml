@@ -1,6 +1,6 @@
 - name: add wheel perms to build aur packages without pass prompt
   become: true
-  shell: "cp /home/chris/repos/dotfiles/sudoers/00-aur-no-sudo /etc/sudoers.d/"
+  shell: "echo '%wheel ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
   tags:
     - install
     - sudo
