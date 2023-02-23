@@ -14,7 +14,7 @@
   tags:
     - install
     - nix
-- name: Install ema note
+- name: Install nix packages, emanote and librewolf
   shell: cd ~/repos/dotfiles/ && ./ema
   tags:
     - install
