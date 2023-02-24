@@ -1,5 +1,0 @@
-- name: Build hugo
-  shell: cd ~/repos/dotfiles/ && ./gethugo
-  tags:
-    - install
-    - hugo
