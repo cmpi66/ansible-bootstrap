@@ -28,8 +28,6 @@
     - include: tasks/suckless.yml
     - include: tasks/rustup.yml
     # - include: tasks/nvm.yml
-    - include: tasks/node.yml
-    - include: tasks/npm-packages.yml
     - include: tasks/gnupg.yml
     - include: tasks/starship.yml
     - include: tasks/moz.yml
@@ -38,6 +36,8 @@
     - include: tasks/root-bash.yml
     - include: tasks/sysctl.yml
     - include: tasks/cron.yml
+    - include: tasks/node.yml
+    - include: tasks/npm-packages.yml
     # - include: tasks/lunarvim.yml
     - include: tasks/aurpacks.yml
     - include: tasks/remove-sudo.yml
