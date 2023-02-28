@@ -1,5 +1,5 @@
 - name: Clean up extra dirs and files
-  shell: cd ~/repos/dotfiles/ && ./removefiles && mkdir -p ~/.config/npm && mv ~/.npmrc ~/.config/npm/npmrc
+  shell: cd ~/repos/dotfiles/ && ./removefiles 
   tags:
   - install
   - cleanup
