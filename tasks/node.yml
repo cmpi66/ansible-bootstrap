@@ -31,17 +31,20 @@
   - node
   - npm-path
 
-- name: Install N
-  npm:
-    name: n
-    global: yes
+- name: Install fnm
+  shell: curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir $HOME/.local/bin --skip-shell 
   tags:
     - install
     - node
 
-# - name: Install correct version of Node
-#   # shell: n 14
-#   shell: cd $HOME/repos/dotfiles && ./nod
+- name: Install fnm 14
+  shell: fnm install 14
+  tags:
+    - install
+    - node
+
+# - name: Install fnm 14
+#   shell: cd ~/repos/dotfiles && ./nod
 #   tags:
 #     - install
 #     - node
