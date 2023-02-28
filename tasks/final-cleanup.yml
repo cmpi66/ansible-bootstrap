@@ -1,0 +1,5 @@
+- name: Clean up extra dirs and files
+  shell: rm ~/.bashrc ~/.bash_history ~/.bash_profile ~/.bash_logout ~/.profile ~/.zshenv ~/.wget-hsts && mkdir -p ~/.config/npm && mv ~/.npmrc ~/.config/npm/npmrc
+  tags:
+  - install
+  - cleanup

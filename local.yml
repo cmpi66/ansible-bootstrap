@@ -41,6 +41,4 @@
     # - include: tasks/lunarvim.yml
     - include: tasks/aurpacks.yml
     - include: tasks/remove-sudo.yml
-    # - include: tasks/setwall.yml
-
-
+    - include: tasks/final-cleanup.yml
