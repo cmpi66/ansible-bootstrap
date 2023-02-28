@@ -4,39 +4,47 @@
   tags:
     - install
     - rust
+    - curls
 - name: mv .cargo
   shell: "mv ~/.cargo ~/.local/share/cargo"
   tags:
     - install
     - rust
+    - curls
 - name: mv .rustup
   shell: "mv ~/.rustup ~/.local/share/rustup"
   tags:
     - install
     - rust
+    - curls
 - name: Curl starship prompt 
   become: true
   shell: sh -c "$(curl -sS https://starship.rs/install.sh)" -y -f
   tags:
     - install
     - starship
+    - curls
 - name: Build nix 
   shell: curl -L https://nixos.org/nix/install | sh
   tags:
     - install
     - nix
+    - curls
 - name: Enable experimental flakes
   shell: mkdir ~/.config/nix && echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
   tags:
     - install
     - nix
+    - curls
 - name: Source nix
   shell: . /home/chris/.nix-profile/etc/profile.d/nix.sh
   tags:
     - install
     - nix
+    - curls
 - name: Install nix packages, emanote and librewolf
   shell: cd ~/repos/dotfiles/ && ./ema
   tags:
     - install
     - nix
+    - curls
