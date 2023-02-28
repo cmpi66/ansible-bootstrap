@@ -3,17 +3,17 @@
   tags:
   - install
   - cleanup
-- name: Move npmrc
-  shell: cd ~/repos/dotfiles/ && ./mvnpm
-  tags:
-  - install
-  - cleanup
 - name: Remove default dirs and create new dirs
   shell: "cd ~/repos/dotfiles/ && ./newdirs"
   tags:
     - install
     - dirs
     - cleanup
+- name: Move npmrc
+  shell: cd ~/repos/dotfiles/ && ./mvnpm
+  tags:
+  - install
+  - cleanup
 - name: Run gpg cmd so dir can be created 
   shell: "gpg --list-keys"
   tags:
