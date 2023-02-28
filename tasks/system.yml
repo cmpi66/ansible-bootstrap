@@ -1,0 +1,74 @@
+- name: Update policy kit rules
+  become: true
+  shell: "cd /home/chris/repos/dotfiles/polkit && cp 49-nopasswd_global.rules /etc/polkit-1/rules.d/"
+  tags:
+    - install
+    - polkit
+    - system
+- name: Install firefox smooth scrolling
+  become: true
+  shell: "echo 'export MOZ_USE_XINPUT2=1' >> /etc/profile.d/use-xinput2.sh"
+  tags:
+    - install
+    - moz
+    - system
+- name: Remove nano and xclip
+  become: true
+  pacman:
+    name: ["nano", "nano-syntax-highlighting", "xclip"]
+    state: absent
+  tags:
+    - install
+    - core
+    - nano
+    - system
+- name: Get root bashrc and export nvim to editor
+  become: true
+  shell: cp /etc/skel/.bashrc /root/.bashrc && echo "export EDITOR=lvim" >> /root/.bashrc
+  tags:
+    - install
+    - root-bash
+    - system
+- name: Get root bashrc and export nvim to editor
+  become: true
+  shell: echo "export VISUAL=lvim" >> /root/.bashrc
+  tags:
+    - install
+    - root-bash
+    - system
+- name: Get root bashrc and export nvim to editor
+  become: true
+  shell: echo "alias nvim='lvim'" >> /root/.bashrc
+  tags:
+    - install
+    - root-bash
+    - system
+
+- name: Enable and start cronie
+  become: true
+  ansible.builtin.systemd:
+    name: cronie.service
+    state: restarted
+    enabled: true
+  tags:
+    - install
+    - sysctl
+    - system
+
+- name: Enable and start bluetooth
+  become: true
+  ansible.builtin.systemd:
+    name: bluetooth.service
+    state: restarted
+    enabled: true
+  tags:
+    - install
+    - sysctl
+    - system
+- name: Install pacman -Sy crontab
+  become: true
+  shell: cd /home/chris/repos/dotfiles/ && crontab mycron
+  tags:
+    - install
+    - cron
+    - system

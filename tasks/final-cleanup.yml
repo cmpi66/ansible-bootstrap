@@ -3,7 +3,7 @@
   tags:
   - install
   - cleanup
-- name: Move npm
+- name: Move npmrc
   shell: cd ~/repos/dotfiles/ && ./mvnpm
   tags:
   - install
@@ -13,4 +13,15 @@
   tags:
     - install
     - dirs
+    - cleanup
+- name: Run gpg cmd so dir can be created 
+  shell: "gpg --list-keys"
+  tags:
+    - install
+    - gnupg
+- name: Move gnupg dir 
+  shell: "mv ~/.gnupg/ ~/.local/share/gnupg"
+  tags:
+    - install
+    - gnupg
     - cleanup
