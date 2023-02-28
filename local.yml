@@ -41,4 +41,4 @@
     - include: tasks/aurpacks.yml
     - include: tasks/remove-sudo.yml
     - include: tasks/final-cleanup.yml
-    - include: tasks/dirs.yml
+    # - include: tasks/dirs.yml
