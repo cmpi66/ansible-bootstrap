@@ -37,14 +37,14 @@
     - install
     - node
 
-- name: Install fnm 14
-  shell: fnm install 14
-  tags:
-    - install
-    - node
-
 # - name: Install fnm 14
-#   shell: cd ~/repos/dotfiles && ./nod
+#   shell: fnm install 14
 #   tags:
 #     - install
 #     - node
+
+- name: Install fnm 14
+  shell: cd ~/repos/dotfiles && ./nod
+  tags:
+    - install
+    - node
