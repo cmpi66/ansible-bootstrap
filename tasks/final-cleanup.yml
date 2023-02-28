@@ -1,5 +1,5 @@
 - name: Clean up extra dirs and files
-  shell: cd ~/repos/dotfiles/ && ./removefiles 
+  shell: cd ~/repos/dotfiles/ && ./removefiles && ./mvnpm
   tags:
   - install
   - cleanup
