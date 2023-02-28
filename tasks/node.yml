@@ -39,9 +39,9 @@
     - install
     - node
 
-- name: Install correct version of Node
-  # shell: n 14
-  shell: cd $HOME/repos/dotfiles && ./nod
-  tags:
-    - install
-    - node
+# - name: Install correct version of Node
+#   # shell: n 14
+#   shell: cd $HOME/repos/dotfiles && ./nod
+#   tags:
+#     - install
+#     - node
