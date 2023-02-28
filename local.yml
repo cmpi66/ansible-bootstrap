@@ -29,6 +29,7 @@
     - include: tasks/rustup.yml
     # - include: tasks/nvm.yml
     - include: tasks/node.yml
+    - include: tasks/npm-packages.yml
     - include: tasks/gnupg.yml
     - include: tasks/starship.yml
     - include: tasks/moz.yml
