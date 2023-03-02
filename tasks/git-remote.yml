@@ -1,19 +1,28 @@
 - name: add remote dotfiles
-  shell: cd $HOME/repos/dotfiles && git remote add hub git@github.com:cmpi66/dotfiles.git
+  shell: cd $HOME/repos/dotfiles && git remote add loc1 git@gitlab.com:chris-m/dotfiles.git && git remote set-url --add loc1 git@github.com:cmpi66/dotfiles.git
   tags:
     - install
     - dotfiles
     - remote
 
 - name: add remote privatefiles
-  shell: cd $HOME/repos/privatefiles && git remote add hub git@github.com:cmpi66/privatefiles.git
+  # shell: cd $HOME/repos/privatefiles && git remote add hub git@github.com:cmpi66/privatefiles.git
+  shell: cd $HOME/repos/privatefiles && git remote add loc1 git@gitlab.com:chris-m/privatefiles.git && git remote set-url --add loc1 git@github.com:cmpi66/privatefiles.git
   tags:
     - install
     - dotfiles
     - remote
 
 - name: add remote newsboat
-  shell: cd $HOME/repos/newsboat-repo && git remote add hub git@github.com:cmpi66/newsboat-repo.git
+  # shell: cd $HOME/repos/newsboat-repo && git remote add hub git@github.com:cmpi66/newsboat-repo.git
+  shell: cd $HOME/repos/newsboat-repo && git remote add loc1 git@gitlab.com:chris-m/newsboat-repo.git && git remote set-url --add loc1 git@github.com:cmpi66/newsboat-repo.git
+  tags:
+    - install
+    - dotfiles
+    - remote
+- name: add remote ansible-bootstrap
+  # shell: cd $HOME/repos/newsboat-repo && git remote add hub git@github.com:cmpi66/newsboat-repo.git
+  shell: cd $HOME/ansible-bootstrap && git remote add loc1 git@gitlab.com:chris-m/ansible-bootstrap.git && git remote set-url --add loc1 git@github.com:cmpi66/ansible-bootstrap.git
   tags:
     - install
     - dotfiles
