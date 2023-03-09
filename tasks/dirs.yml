@@ -1,5 +1,0 @@
-- name: Remove default dirs and create new dirs
-  shell: "cd ~/repos/dotfiles/ && ./newdirs"
-  tags:
-    - install
-    - dirs

@@ -1,0 +1,27 @@
+- name: arkenfox js
+  ansible.builtin.git:
+    repo: 'https://github.com/arkenfox/user.js.git'
+    dest: "{{ lookup('env', 'HOME') }}/dl/git-clones/user.js"
+  tags:
+    - install
+    - dotfiles
+    - firefox
+- name: copy user.js and updater.sh
+  shell: cd /home/chris/dl/git-clones/user.js/ && cp user.js updater.sh ~/.librewolf/*.default-release
+  tags:
+    - install
+    - dotfiles
+    - firefox
+- name: symlink overrides
+  shell: bash -c 'ln -s ~/.config/firefox/user-overrides.js ~/.librewolf/*.default-release'
+  tags:
+    - install
+    - dotfiles
+    - firefox
+- name: And finally run updater script
+  shell: "cd ~/.librewolf/*.default-release && ./updater.sh"
+  tags:
+    - install
+    - dotfiles
+    - firefox
+

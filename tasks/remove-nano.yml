@@ -1,9 +1,0 @@
-- name: Remove nano and xclip
-  become: true
-  pacman:
-    name: ["nano", "nano-syntax-highlighting", "xclip"]
-    state: absent
-  tags:
-    - install
-    - core
-    - nano

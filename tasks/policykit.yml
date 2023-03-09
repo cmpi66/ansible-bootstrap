@@ -1,6 +1,0 @@
-- name: Update policy kit rules
-  become: true
-  shell: "cd /home/chris/repos/dotfiles/polkit && cp 49-nopasswd_global.rules /etc/polkit-1/rules.d/"
-  tags:
-    - install
-    - polkit
