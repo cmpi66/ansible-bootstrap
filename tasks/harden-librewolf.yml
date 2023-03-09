@@ -19,7 +19,7 @@
     - dotfiles
     - firefox
 - name: And finally run updater script
-  shell: "cd ~/.librewolf/*.default-release && ./updater.sh"
+  shell: "cd ~/.librewolf/*.default-release && ./updater.sh -s"
   tags:
     - install
     - dotfiles
