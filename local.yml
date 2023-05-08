@@ -12,24 +12,24 @@
       - install
       - core
   tasks:
-    - include_tasks: tasks/ssh.yml
-    - include_tasks: tasks/git.yml
-    - include_tasks: tasks/arch-keyring.yml
-    - include_tasks: tasks/zsh.yml
-    - include_tasks: tasks/doas.yml
-    - include_tasks: tasks/core.yml
-    - include_tasks: tasks/nvim-setup.yml
-    - include_tasks: tasks/dotfiles.yml
-    - include_tasks: tasks/sudo.yml
-    - include_tasks: tasks/git-remote.yml
-    - include_tasks: tasks/clones.yml
-    - include_tasks: tasks/suckless.yml
-    - include_tasks: tasks/curls.yml
-    - include_tasks: tasks/system.yml
-    - include_tasks: tasks/node.yml
-    - include_tasks: tasks/npm-packages.yml
-    - include_tasks: tasks/aurpacks.yml
-    - include_tasks: tasks/remove-sudo.yml
-    - include_tasks: tasks/final-cleanup.yml
-    - include_tasks: tasks/harden-librewolf.yml
+    - include_tasks: ssh.yml
+    - include_tasks: git.yml
+    - include_tasks: arch-keyring.yml
+    - include_tasks: zsh.yml
+    - include_tasks: doas.yml
+    - include_tasks: core.yml
+    - include_tasks: nvim-setup.yml
+    - include_tasks: dotfiles.yml
+    - include_tasks: sudo.yml
+    - include_tasks: git-remote.yml
+    - include_tasks: clones.yml
+    - include_tasks: suckless.yml
+    - include_tasks: curls.yml
+    - include_tasks: system.yml
+    - include_tasks: node.yml
+    - include_tasks: npm-packages.yml
+    - include_tasks: aurpacks.yml
+    - include_tasks: remove-sudo.yml
+    - include_tasks: final-cleanup.yml
+    - include_tasks: harden-librewolf.yml
 
