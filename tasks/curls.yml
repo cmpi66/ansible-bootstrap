@@ -42,7 +42,7 @@
     - install
     - nix
     - curls
-- name: Install nix packages, emanote and librewolf
+- name: Install nix package emanote 
   shell: cd ~/repos/dotfiles/ && ./ema
   tags:
     - install

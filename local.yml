@@ -30,6 +30,6 @@
     - include: tasks/npm-packages.yml
     - include: tasks/aurpacks.yml
     - include: tasks/remove-sudo.yml
-    - include: tasks/harden-librewolf.yml
     - include: tasks/final-cleanup.yml
+    - include: tasks/harden-librewolf.yml
 

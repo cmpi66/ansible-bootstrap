@@ -6,12 +6,19 @@
     - install
     - dotfiles
     - firefox
+- name: Run firefox to get dir
+  shell: librewolf --headless
+  tags:
+    - install
+    - dotfiles
+    - firefox
 - name: copy user.js and updater.sh
   shell: cd /home/chris/dl/git-clones/user.js/ && cp user.js updater.sh ~/.librewolf/*.default-release
   tags:
     - install
     - dotfiles
     - firefox
+
 - name: symlink overrides
   shell: bash -c 'ln -s ~/.config/firefox/user-overrides.js ~/.librewolf/*.default-release'
   tags:
