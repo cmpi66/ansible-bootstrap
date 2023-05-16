@@ -12,10 +12,10 @@
     - install
     - moz
     - system
-- name: Remove nano and xclip
+- name: Remove nano 
   become: true
   pacman:
-    name: ["nano", "nano-syntax-highlighting", "xclip"]
+    name: ["nano", "nano-syntax-highlighting"]
     state: absent
   tags:
     - install
@@ -59,6 +59,16 @@
   become: true
   ansible.builtin.systemd:
     name: bluetooth.service
+    state: restarted
+    enabled: true
+  tags:
+    - install
+    - sysctl
+    - system
+- name: Enable and start pcsc
+  become: true
+  ansible.builtin.systemd:
+    name: pcscd.service
     state: restarted
     enabled: true
   tags:

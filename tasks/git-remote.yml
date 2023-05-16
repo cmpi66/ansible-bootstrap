@@ -6,7 +6,6 @@
     - remote
 
 - name: add remote privatefiles
-  # shell: cd $HOME/repos/privatefiles && git remote add hub git@github.com:cmpi66/privatefiles.git
   shell: cd $HOME/repos/privatefiles && git remote rm origin && git remote add origin git@gitlab.com:chris-m/privatefiles.git && git remote set-url --add origin git@github.com:cmpi66/privatefiles.git 
   tags:
     - install
@@ -14,15 +13,19 @@
     - remote
 
 - name: add remote newsboat
-  # shell: cd $HOME/repos/newsboat-repo && git remote add hub git@github.com:cmpi66/newsboat-repo.git
   shell: cd $HOME/repos/newsboat-repo && git remote rm origin && git remote add origin git@gitlab.com:chris-m/newsboat-repo.git && git remote set-url --add origin git@github.com:cmpi66/newsboat-repo.git 
   tags:
     - install
     - dotfiles
     - remote
 - name: add remote ansible-bootstrap
-  # shell: cd $HOME/repos/newsboat-repo && git remote add hub git@github.com:cmpi66/newsboat-repo.git
   shell: cd $HOME/ansible-bootstrap && git remote rm origin && git remote add origin git@gitlab.com:chris-m/ansible-bootstrap.git && git remote set-url --add origin git@github.com:cmpi66/ansible-bootstrap.git 
+  tags:
+    - install
+    - dotfiles
+    - remote
+- name: add remote fish-history-arch
+  shell: cd $HOME/repos/fish-history-arch && git remote rm origin && git remote add origin git@gitlab.com:chris-m/fish-history-arch.git && git remote set-url --add origin git@github.com:cmpi66/fish-history-arch.git 
   tags:
     - install
     - dotfiles

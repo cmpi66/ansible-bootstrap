@@ -1,7 +1,7 @@
 - hosts: localhost
-  vars:
-    source_key: "../.ssh/id_rsa"
-    dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
+  # vars:
+  #   source_key: "../.ssh/id_rsa"
+  #   dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
   pre_tasks:
   - name: Update pacman
     become: true
@@ -12,7 +12,7 @@
       - install
       - core
   tasks:
-    - import_tasks: ssh.yml
+    # - import_tasks: ssh.yml
     - import_tasks: git.yml
     - import_tasks: arch-keyring.yml
     - import_tasks: zsh.yml

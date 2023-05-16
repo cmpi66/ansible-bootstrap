@@ -8,7 +8,7 @@
     - stow
 - name: Cloning dotfiles
   ansible.builtin.git:
-    repo: 'git@gitlab.com:chris-m/dotfiles.git'
+    repo: 'https://gitlab.com/chris-m/dotfiles.git'
     dest: "{{ lookup('env', 'HOME') }}/repos/dotfiles"
     recursive: yes
     update: yes
@@ -27,7 +27,7 @@
 
 - name: Cloning privatefiles
   ansible.builtin.git:
-    repo: 'git@gitlab.com:chris-m/privatefiles.git'
+    repo: 'https://gitlab.com/chris-m/privatefiles.git'
     dest: "{{ lookup('env', 'HOME') }}/repos/privatefiles"
     recursive: yes
     update: yes
@@ -46,7 +46,7 @@
 
 - name: Cloning newsboat
   ansible.builtin.git:
-    repo: 'git@gitlab.com:chris-m/newsboat-repo.git'
+    repo: 'https://gitlab.com/chris-m/newsboat-repo.git'
     dest: "{{ lookup('env', 'HOME') }}/repos/newsboat-repo"
     recursive: yes
     update: yes
@@ -65,7 +65,7 @@
 
 - name: Cloning fish history
   ansible.builtin.git:
-    repo: 'git@github.com:cmpi66/fish-history-arch.git'
+    repo: 'https://github.com/cmpi66/fish-history-arch.git'
     dest: "{{ lookup('env', 'HOME') }}/repos/fish-history-arch"
     recursive: yes
     update: yes
