@@ -21,7 +21,7 @@
     - import_tasks: nvim-setup.yml
     - import_tasks: dotfiles.yml
     - import_tasks: sudo.yml
-    - import_tasks: git-remote.yml
+    # - import_tasks: git-remote.yml
     - import_tasks: clones.yml
     - import_tasks: suckless.yml
     - import_tasks: curls.yml
