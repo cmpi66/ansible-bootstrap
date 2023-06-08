@@ -1,23 +1,30 @@
-- name: Install keyring
+# - name: Install keyring
+#   become: true
+#   pacman:  
+#     name: archlinux-keyring
+#   tags:
+#     - install
+#     - keyring
+# - name: Update to us mirrors
+#   become: true
+#   shell: reflector --verbose -c US --protocol https --sort score --latest 20 --download-timeout 5 --save /etc/pacman.d/mirrorlist
+#   tags:
+#     - install
+#     - keyring
+# - name: Run pacman -Sy
+#   become: true
+#   pacman:
+#     update_cache: true
+# - name: Append keyring
+#   become: true
+#   shell: pacman-key --populate archlinux 
+#   tags:
+#     - install
+#     - keyring
+
+- name: Install archlinux repos
   become: true
-  pacman:  
-    name: archlinux-keyring
-  tags:
-    - install
-    - keyring
-- name: Update to us mirrors
-  become: true
-  shell: reflector --verbose -c US --protocol https --sort score --latest 20 --download-timeout 5 --save /etc/pacman.d/mirrorlist
-  tags:
-    - install
-    - keyring
-- name: Run pacman -Sy
-  become: true
-  pacman:
-    update_cache: true
-- name: Append keyring
-  become: true
-  shell: pacman-key --populate archlinux 
+  shell: ./keys
   tags:
     - install
     - keyring

@@ -21,4 +21,19 @@
     - install
     - dotfiles
     - gits
+- name: Clone yay
+  ansible.builtin.git:
+    repo: 'https://aur.archlinux.org/yay.git' 
+    dest: "{{ lookup('env', 'HOME') }}/dl/git-clones/yay"
+  tags:
+    - install
+    - dotfiles
+    - gits
+- name: Install Yay
+  become: true
+  shell: cd /home/chris/dl/git-clones/yay/ && makepkg --noconfirm -si  
+  tags:
+    - install
+    - dotfiles
+    - gits
 
