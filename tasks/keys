@@ -1,5 +1,6 @@
 #!/bin/sh
 
+## Got this function from LUKE'S LARBS
 refreshkeys() { \
 	case "$(readlink -f /sbin/init)" in
 		*systemd* )
@@ -27,3 +28,5 @@ Include = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
 			;;
 	esac ;}
 
+
+refreshkeys || error "Error automatically refreshing Arch keyring. Consider doing so manually."
