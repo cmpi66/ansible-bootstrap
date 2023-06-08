@@ -52,33 +52,36 @@
     - cron
     - system
 
-- name: Enable and start cronie
-  become: true
-  ansible.builtin.service:
-    name: cronie.service
-    enabled: yes
-    state: restarted
-  tags:
-    - install
-    - system
-- name: Enable and start bluetooth
-  become: true
-  ansible.builtin.service:
-    name: bluetooth.service
-    enabled: yes
-    state: restarted
-  tags:
-    - install
-    - system
-- name: Enable and start pcsc
-  become: true
-  ansible.builtin.service:
-    name: pcscd.service
-    enabled: yes
-    state: restarted
-  tags:
-    - install
-    - system
+
+
+# Will have to do these manually
+# - name: Enable and start cronie
+#   become: true
+#   ansible.builtin.service:
+#     name: cronie.service
+#     enabled: yes
+#     state: restarted
+#   tags:
+#     - install
+#     - system
+# - name: Enable and start bluetooth
+#   become: true
+#   ansible.builtin.service:
+#     name: bluetooth.service
+#     enabled: yes
+#     state: restarted
+#   tags:
+#     - install
+#     - system
+# - name: Enable and start pcsc
+#   become: true
+#   ansible.builtin.service:
+#     name: pcscd.service
+#     enabled: yes
+#     state: restarted
+#   tags:
+#     - install
+#     - system
 # - name: Enable and start cronie
 #   become: true
 #   ansible.builtin.systemd:

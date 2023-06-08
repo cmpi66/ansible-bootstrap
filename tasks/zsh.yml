@@ -9,7 +9,7 @@
   shell: chsh -s $(which zsh) chris
   tags: *tags_for_zsh_tasks
 
-- name: Source zdotdir sytemwide
+- name: Source zdotdir system wide
   become: true
   shell: "echo 'export ZDOTDIR=$HOME/.config/zsh' >> /etc/zsh/zshenv"
   tags: *tags_for_zsh_tasks

@@ -30,7 +30,6 @@
     - dotfiles
     - gits
 - name: Install Yay
-  become: true
   shell: cd /home/chris/dl/git-clones/yay/ && makepkg --noconfirm -si  
   tags:
     - install
