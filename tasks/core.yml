@@ -2,7 +2,7 @@
 - name: Install System Packages 1 
   become: true
   pacman:
-    name: ["alacritty", "arch-wiki-docs", "aspell-en", "atuin", "bat", "barrier", "bluez", "bluez-utils", "brightnessctl", "broot", "calcurse", "calibre", "clipnotify", "codespell", "cronie", "ctags", "cups", "cutefish-icons", "discord", "dog", "dunst", "ebook-tools", "entr", "exa", "fd", "firefox", "fisher", "flake8", "fontconfig", "ffmpeg", "fzf", "gimp", "gimp-plugin-gmic", "glow", "gnucash", "go", "gparted", "grub-btrfs"]
+    name: ["alacritty", "arch-wiki-docs", "aspell-en", "atuin", "bat", "barrier", "bluez", "blulez-openrc", "bluez-utils", "brightnessctl", "broot", "calcurse", "calibre", "clipnotify", "codespell", "cronie", "cronie-openrc", "ctags", "cups", "cups-openrc", "cutefish-icons", "discord", "dog", "dunst", "ebook-tools", "entr", "exa", "fd", "firefox", "fisher", "flake8", "fontconfig", "ffmpeg", "fuse2", "fuse3", "fzf", "gimp", "gimp-plugin-gmic", "glow", "gnucash", "go", "gparted", "grub-btrfs"]
   tags:
     - install
     - neovim
@@ -30,7 +30,7 @@
 - name: Install System Packages 3 
   become: true
   pacman:
-    name: [ "r", "redshift", "ripgrep", "rmlint", "rofi", "sdcv", "shellcheck", "shfmt", "socat", "stylua", "sxhkd", "sxiv", "syncthing", "task", "the_silver_searcher", "timew", "tk", "tldr", "tmux", "transmission-cli", "tree", "unclutter", "unzip", "ueberzug", "urlscan", "vim", "vit", "wireguard-tools", "wireplumber", "xcape", "xdotool", "xclip", "xkeycaps", "xorg-server", "xorg-xinit", "xorg-xwininfo", "xorg-xprop", "xorg-xev", "xorg-xset", "xorg-xsetroot", "xsel", "xwallpaper", "yt-dlp", "yubikey-manager", "zathura", "zathura-pdf-mupdf", "zk", "zoxide", "zbar" ]
+    name: [ "r", "redshift", "rclone", "ripgrep", "rmlint", "rofi", "sdcv", "shellcheck", "shfmt", "socat", "stylua", "sxhkd", "sxiv", "syncthing", "task", "the_silver_searcher", "timew", "tk", "tldr", "tmux", "transmission-cli", "tree", "unclutter", "unzip", "ueberzug", "urlscan", "vim", "vit", "wireguard-tools", "wireplumber", "xcape", "xdotool", "xclip", "xkeycaps", "xorg-server", "xorg-xinput", "xorg-xinit", "xorg-xwininfo", "xorg-xprop", "xorg-xev", "xorg-xset", "xorg-xsetroot", "xsel", "xwallpaper", "yt-dlp", "yubikey-manager", "zathura", "zathura-pdf-mupdf", "zk", "zoxide", "zbar" ]
   tags:
     - install
     - neovim
