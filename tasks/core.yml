@@ -2,7 +2,7 @@
 - name: Install System Packages 1 
   become: true
   pacman:
-    name: ["alacritty", "arch-wiki-docs", "aspell-en", "atuin", "bat", "barrier", "bluez", "blulez-openrc", "bluez-utils", "brightnessctl", "broot", "calcurse", "calibre", "clipnotify", "codespell", "cronie", "cronie-openrc", "ctags", "cups", "cups-openrc", "cutefish-icons", "discord", "dog", "dunst", "ebook-tools", "entr", "exa", "fd", "firefox", "fisher", "flake8", "fontconfig", "ffmpeg", "fuse2", "fuse3", "fzf", "gimp", "gimp-plugin-gmic", "glow", "gnucash", "go", "gparted", "grub-btrfs"]
+    name: ["alacritty", "arch-wiki-docs", "aspell-en", "atuin", "bat", "barrier", "bluez", "blulez-openrc", "bluez-utils", "brightnessctl", "broot", "calcurse", "calibre", "clipnotify", "codespell", "ctags", "cutefish-icons", "discord", "dog", "dunst", "ebook-tools", "entr", "exa", "fd", "firefox", "fisher", "flake8", "fontconfig", "ffmpeg", "fuse2", "fuse3", "fzf", "gimp", "gimp-plugin-gmic", "glow", "gnucash", "go", "gparted", "grub-btrfs"]
   tags:
     - install
     - neovim
@@ -21,7 +21,7 @@
 - name: Install System Packages 2 
   become: true
   pacman:
-    name: [ "gufw", "keepassxc", "harfbuzz", "inkscape", "iperf", "languagetool", "libmythes", "libreoffice-fresh", "libsecret", "libnotify", "luacheck", "lxappearance", "lynx", "maim",  "man-db", "moreutils", "mpc", "mpd", "mpv", "mtr", "mythes-en", "navi", "ncdu", "ncmpcpp", "net-tools", "newsboat", "noto-fonts", "noto-fonts-emoji", "okular", "pam-u2f",  "pandoc-cli", "pass-otp",  "pcsclite",  "pcsclite-openrc", "pcmanfm", "picom", "pipewire",  "wireplumber", "pipewire-alsa", "pipewire-pulse", "polkit", "procs", "pulsemixer", "pydf", "python-black", "python-netaddr", "python-pynvim"]
+    name: [ "gufw", "keepassxc", "harfbuzz", "inkscape", "iperf", "languagetool", "libmythes", "libreoffice-fresh", "libsecret", "libnotify", "luacheck", "lxappearance", "lynx", "maim",  "man-db", "moreutils", "mpc", "mpd", "mpv", "mtr", "mythes-en", "navi", "ncdu", "ncmpcpp", "net-tools", "newsboat", "noto-fonts", "noto-fonts-emoji", "okular", "pam-u2f",  "pandoc-cli", "pass-otp", "pcmanfm", "picom", "pipewire",  "wireplumber", "pipewire-alsa", "pipewire-pulse", "polkit", "procs", "pulsemixer", "pydf", "python-black", "python-netaddr", "python-pynvim"]
   tags:
     - install
     - neovim
