@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+ansible-playbook ./tasks/hardening.yml --ask-become-pass 
