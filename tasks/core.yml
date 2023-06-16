@@ -2,7 +2,7 @@
 - name: Install System Packages 1 
   become: true
   pacman:
-    name: ["alacritty", "arch-wiki-docs", "aspell-en", "atuin", "bat", "barrier", "bluez", "blulez-openrc", "bluez-utils", "brightnessctl", "broot", "calibre", "clipnotify", "codespell", "ctags", "cutefish-icons", "discord", "dog", "dunst", "ebook-tools", "entr", "exa", "fd", "firefox", "flake8", "fontconfig", "ffmpeg", "fuse2", "fuse3", "fzf", "gimp", "gimp-plugin-gmic", "glow", "gnucash", "go"]
+    name: ["alacritty", "arch-wiki-docs", "aspell-en", "atuin", "bat", "barrier", "bluez", "bluez-openrc", "bluez-utils", "brightnessctl", "broot", "calibre", "clipnotify", "codespell", "ctags", "cutefish-icons", "discord", "dog", "dunst", "ebook-tools", "entr", "exa", "fd", "firefox", "flake8", "fontconfig", "ffmpeg", "fuse2", "fuse3", "fzf", "gimp", "gimp-plugin-gmic", "glow", "gnucash", "go"]
   tags:
     - install
     - neovim
