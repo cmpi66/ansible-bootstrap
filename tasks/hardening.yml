@@ -1,0 +1,61 @@
+- name: Curl Network manager macrandomizer
+  become: true
+  shell: "curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/NetworkManager/conf.d/00-macrandomize.conf >> /etc/NetworkManager/conf.d/00-macrandomize.conf && chmod 600 /etc/NetworkManager/conf.d/00-macrandomize.conf"
+  tags:
+    - hardening
+- name: Curl Network manager ip6 privacy
+  become: true
+  shell: "curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/NetworkManager/conf.d/00-macrandomize.conf >> /etc/NetworkManager/conf.d/00-macrandomize.conf && chmod 600 /etc/NetworkManager/conf.d/00-macrandomize.conf"
+  tags:
+    - hardening
+- name: Curl Modprobe blacklist
+  become: true
+  shell: "curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/modeprobe.d/blacklist.conf >> /etc/modprobe.d/blacklist.conf && chmod 600 /etc/modprobe.d/*"
+
+  tags:
+    - hardening
+- name: Curl Chrony 
+  become: true
+  shell: curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/chrony.conf >> /etc/chrony.conf
+  tags:
+    - hardening
+- name: Curl sysctl  
+  become: true
+  shell: curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/sysctl.d/30_security-misc.conf >> /etc/sysctl.d/30_security-misc.conf
+  tags:
+    - hardening
+- name: Curl sysctl  
+  become: true
+  shell: curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/sysctl.d/30_security-misc_kexec-disable.conf >> /etc/sysctl.d/30_security-misc_kexec-disable.conf
+  tags:
+    - hardening
+- name: Curl sysctl  
+  become: true
+  shell: "curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/sysctl.d/30_silent-kernel-printk.conf >> /etc/sysctl.d/30_silent-kernel-printk.conf && chmod 600 /etc/sysctl.d/*"
+  tags:
+    - hardening
+- name: Curl grub files  
+  become: true
+  shell: curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/grub.d/40_cpu_mitigations.cfg >> /etc/grub.d/40_cpu_mitigations.cfg
+  tags:
+    - hardening
+- name: Curl grub file  
+  become: true
+  shell: curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/grub.d/40_distrust_bootloader.cfg >> /etc/grub.d/40_distrust_bootloader.cfg
+  tags:
+    - hardening
+- name: Curl grub files  
+  become: true
+  shell: curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/grub.d/40_distrust_cpu.cfg >> /etc/grub.d/40_distrust_cpu.cfg
+  tags:
+    - hardening
+- name: Curl grub files  
+  become: true
+  shell: curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/grub.d/40_enable_iommu.cfg >> /etc/grub.d/40_enable_iommu.cfg
+  tags:
+    - hardening
+- name: Curl grub files  
+  become: true
+  shell: "curl https://raw.githubusercontent.com/cmpi66/linux-hardening/main/etc/grub.d/40_kernel_hardening.cfg >> /etc/grub.d/40_kernel_hardening.cfg && chmod 755 /etc/grub.d/*"
+  tags:
+    - hardening
