@@ -31,11 +31,11 @@
   - node
   - npm-path
 
-- name: Install fnm
-  shell: curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir $HOME/.local/bin --skip-shell 
-  tags:
-    - install
-    - node
+# - name: Install fnm
+#   shell: curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir $HOME/.local/bin --skip-shell 
+#   tags:
+#     - install
+#     - node
 
 # - name: Install fnm 14
 #   shell: fnm install 14
