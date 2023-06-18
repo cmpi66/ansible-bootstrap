@@ -5,13 +5,6 @@
     - install
     - polkit
     - system
-- name: Install firefox smooth scrolling
-  become: true
-  shell: "echo 'export MOZ_USE_XINPUT2=1' >> /etc/profile.d/use-xinput2.sh"
-  tags:
-    - install
-    - moz
-    - system
 - name: Remove nano 
   become: true
   pacman:

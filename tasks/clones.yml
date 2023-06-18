@@ -38,7 +38,7 @@
 - name: Clone tmux tpm
   ansible.builtin.git:
     repo: 'https://github.com/tmux-plugins/tpm.git' 
-    dest: "{{ lookup('env', 'HOME') }}/.config/tmux/plugins/tmp"
+    dest: "{{ lookup('env', 'HOME') }}/.config/tmux/plugins/tpm"
   tags:
     - install
     - dotfiles
