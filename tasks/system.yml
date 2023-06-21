@@ -39,12 +39,18 @@
 
 - name: Install pacman -Sy crontab
   become: true
-  shell: cd /home/chris/repos/dotfiles/ && crontab mycron
+  shell: cd /home/chris/repos/dotfiles/ && crontab sucron
   tags:
     - install
     - cron
     - system
 
+- name: user cron
+  shell: cd /home/chris/repos/dotfiles/ && crontab mycron
+  tags:
+    - install
+    - cron
+    - system
 
 
 # Will have to do these manually
