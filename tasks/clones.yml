@@ -35,6 +35,20 @@
     - install
     - dotfiles
     - gits
+- name: Clone paru
+  ansible.builtin.git:
+    repo: 'https://aur.archlinux.org/paru.git' 
+    dest: "{{ lookup('env', 'HOME') }}/dl/git-clones/paru"
+  tags:
+    - install
+    - dotfiles
+    - gits
+- name: Install paru
+  shell: cd /home/chris/dl/git-clones/paru/ && makepkg --noconfirm -si  
+  tags:
+    - install
+    - dotfiles
+    - gits
 - name: Clone tmux tpm
   ansible.builtin.git:
     repo: 'https://github.com/tmux-plugins/tpm.git' 
