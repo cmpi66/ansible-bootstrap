@@ -57,4 +57,11 @@
     - install
     - dotfiles
     - gits
-
+- name: Clone swiv
+  ansible.builtin.git:
+    repo: 'https://github.com/ShaqeelAhmad/swiv.git' 
+    dest: "{{ lookup('env', 'HOME') }}/dl/git-clones/swiv"
+  tags:
+    - install
+    - dotfiles
+    - gits

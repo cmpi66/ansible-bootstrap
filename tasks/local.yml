@@ -19,6 +19,7 @@
     - import_tasks: doas.yml
     - import_tasks: core.yml
     - import_tasks: nvim-setup.yml
+    - import_tasks: waybar-setup.yml
     - import_tasks: dotfiles.yml
     - import_tasks: sudo.yml
     # - import_tasks: git-remote.yml

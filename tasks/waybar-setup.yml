@@ -1,0 +1,33 @@
+- name: Get waybar prereqs
+  become: true
+  pacman:
+    name: ["chrono-date gtk-layer-shell", "libappindicator-gtk3", "libdbusmenu-glib", "libdbusmenu-gtk3", "playerctl", "sndio", "spdlog", "scdoc", "catch2"]
+  tags:
+    - install
+    - waybar
+- name: Remove waybar
+  shell: rm -rf ~/dl/git-clones/Waybar
+  tags:
+    - install
+    - waybar
+- name: Clone Waybar
+  ansible.builtin.git:
+    repo: 'https://github.com/Alexays/Waybar.git'
+    dest: "{{ lookup('env', 'HOME') }}/dl/git-clones/Waybar"
+  tags:
+    - install
+    - waybar
+#TODO:
+## Figure out how to automate the rest of the steps outlined on hyprland's site.
+
+# - name: Build Waybar
+#   shell: "cd {{ lookup('env', 'HOME') }}/dl/git-clones/Waybar && git checkout release-0.8 && make CMAKE_BUILD_TYPE=RelWithDebInfo -j$(nproc)"
+#   tags:
+#     - install
+#     - waybar
+# - name: Install waybar
+#   become: true
+#   shell: "cd {{ lookup('env', 'HOME') }}/dl/git-clones/Waybar && make install"
+#   tags:
+#     - install
+#     - waybar
