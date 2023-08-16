@@ -19,7 +19,7 @@
 - name: Install System Packages 3 
   become: true
   pacman:
-    name: [ "r", "redshift", "ripgrep", "rmlint", "rofi", "sdcv", "shellcheck", "shfmt", "socat", "stylua", "sxhkd", "sxiv", "syncthing", "task", "texlive-most", "the_silver_searcher", "timew", "tk", "tldr", "tmux", "transmission-cli", "tree", "unclutter", "urlscan", "vim", "vit", "wireguard-tools", "xcape", "xclip", "xkeycaps", "xorg-xev", "xorg-xset", "xorg-xsetroot", "xsel", "xwallpaper", "yubikey-manager", "zathura", "zk", "zoxide", "zbar" ]
+    name: [ "r", "redshift", "ripgrep", "rmlint", "rofi", "sdcv", "shellcheck", "shfmt", "socat", "stylua", "sxhkd", "sxiv", "syncthing", "task", "the_silver_searcher", "timew", "tk", "tldr", "tmux", "transmission-cli", "tree", "unclutter", "urlscan", "vim", "vit", "wireguard-tools", "xcape", "xclip", "xkeycaps", "xorg-xev", "xorg-xset", "xorg-xsetroot", "xsel", "xwallpaper", "yubikey-manager", "zathura", "zk", "zoxide", "zbar" ]
   tags:
     - install
     - neovim
