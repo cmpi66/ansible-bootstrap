@@ -24,3 +24,12 @@
     - install
     - neovim
     - core
+
+- name: Install Wayland Packages
+  become: true
+  pacman:
+    name: ["wlroots", "hyprland", "qt5-wayland", "qt6-wayland", "wofi", "bemenu-wayland", "swaybg", "fmt", "wl-clipboard", "cliphist", "gammastep", "swaylock", "wf-recorder", "papirus-icon-theme", "xdg-desktop-portal", "xdg-desktop-portal-lxqt", "xdg-desktop-portal-hyprland", "polkit-kde-agent", "grim", "slurp", "swayidle", "wayland-protocols", "ydotool"]
+  tags:
+    - install
+    - neovim
+    - core
