@@ -25,7 +25,7 @@
     - install
     - neovim
 - name: Build neovim
-  shell: "cd {{ lookup('env', 'HOME') }}/dl/git-clones/neovim && git checkout release-0.8 && make -j$(nproc)"
+  shell: "cd {{ lookup('env', 'HOME') }}/dl/git-clones/neovim && git checkout release-0.8 && make CMAKE_BUILD_TYPE=RelWithDebInfo -j$(nproc)"
   tags:
     - install
     - neovim
