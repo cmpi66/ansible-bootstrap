@@ -1,9 +1,3 @@
-- name: Install ZSH and fish
-  become: true
-  pacman: 
-    name: ["zsh", "fish"]
-  tags: &tags_for_zsh_tasks [ 'install', 'productivity', 'dotfiles', 'zsh' ]
-    
 - name: Change shell to zsh
   become: true
   shell: chsh -s $(which zsh) chris
