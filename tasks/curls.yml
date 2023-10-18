@@ -1,22 +1,21 @@
-
-- name: Build rustup 
-  shell: "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y"
-  tags:
-    - install
-    - rust
-    - curls
-- name: mv .cargo
-  shell: "mv ~/.cargo ~/.local/share/cargo"
-  tags:
-    - install
-    - rust
-    - curls
-- name: mv .rustup
-  shell: "mv ~/.rustup ~/.local/share/rustup"
-  tags:
-    - install
-    - rust
-    - curls
+# - name: Build rustup 
+#   shell: "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y"
+#   tags:
+#     - install
+#     - rust
+#     - curls
+# - name: mv .cargo
+#   shell: "mv ~/.cargo ~/.local/share/cargo"
+#   tags:
+#     - install
+#     - rust
+#     - curls
+# - name: mv .rustup
+#   shell: "mv ~/.rustup ~/.local/share/rustup"
+#   tags:
+#     - install
+#     - rust
+#     - curls
 - name: Curl starship prompt 
   become: true
   shell: sh -c "$(curl -sS https://starship.rs/install.sh)" -y -f
@@ -43,7 +42,7 @@
     - nix
     - curls
 - name: Install nix package emanote 
-  shell: cd ~/repos/dotfiles/ && ./ema
+  shell: ./ema
   tags:
     - install
     - nix

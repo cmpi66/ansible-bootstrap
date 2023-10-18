@@ -1,11 +1,3 @@
-- name: Install nodejs and npm
-  become: true
-  pacman:
-    name: ["nodejs", "npm"]
-  tags:
-    - install
-    - node
-
 - name: npmjs prefix
   shell: mkdir -p ~/.local/.npm-global
   tags:

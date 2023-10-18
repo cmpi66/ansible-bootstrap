@@ -12,25 +12,16 @@
       - install
       - core
   tasks:
-    # - import_tasks: ssh.yml
     - import_tasks: git.yml
-    - import_tasks: arch-keyring.yml
     - import_tasks: zsh.yml
     - import_tasks: doas.yml
-    - import_tasks: core.yml
-    - import_tasks: nvim-setup.yml
-    - import_tasks: waybar-setup.yml
     - import_tasks: dotfiles.yml
-    - import_tasks: sudo.yml
-    # - import_tasks: git-remote.yml
     - import_tasks: clones.yml
     - import_tasks: suckless.yml
     - import_tasks: curls.yml
     - import_tasks: system.yml
     - import_tasks: node.yml
     - import_tasks: npm-packages.yml
-    - import_tasks: aurpacks.yml
-    - import_tasks: remove-sudo.yml
     - import_tasks: final-cleanup.yml
     - import_tasks: harden-librewolf.yml
 

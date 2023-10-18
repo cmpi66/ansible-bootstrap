@@ -1,11 +1,3 @@
-- name: autocpufreq
-  ansible.builtin.git:
-    repo: 'https://github.com/AdnanHodzic/auto-cpufreq.git'
-    dest: "{{ lookup('env', 'HOME') }}/dl/git-clones/auto-cpufreq"
-  tags:
-    - install
-    - dotfiles
-    - gits
 - name: clipmenu
   ansible.builtin.git:
     repo: 'https://github.com/cdown/clipmenu.git' 
@@ -17,34 +9,6 @@
 - name: Run clipmenu
   become: true
   shell: cd /home/chris/dl/git-clones/clipmenu/ && make install
-  tags:
-    - install
-    - dotfiles
-    - gits
-- name: Clone yay
-  ansible.builtin.git:
-    repo: 'https://aur.archlinux.org/yay.git' 
-    dest: "{{ lookup('env', 'HOME') }}/dl/git-clones/yay"
-  tags:
-    - install
-    - dotfiles
-    - gits
-- name: Install Yay
-  shell: cd /home/chris/dl/git-clones/yay/ && makepkg --noconfirm -si  
-  tags:
-    - install
-    - dotfiles
-    - gits
-- name: Clone paru
-  ansible.builtin.git:
-    repo: 'https://aur.archlinux.org/paru.git' 
-    dest: "{{ lookup('env', 'HOME') }}/dl/git-clones/paru"
-  tags:
-    - install
-    - dotfiles
-    - gits
-- name: Install paru
-  shell: cd /home/chris/dl/git-clones/paru/ && makepkg --noconfirm -si  
   tags:
     - install
     - dotfiles

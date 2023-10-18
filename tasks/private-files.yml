@@ -21,8 +21,8 @@
 
   - name: Cloning newsboat
     ansible.builtin.git:
-      repo: 'git@gitlab.com:chris-m/newsboat-repo.git'
-      dest: "{{ lookup('env', 'HOME') }}/repos/newsboat-repo"
+      repo: 'git@gitlab.com:chris-m/newsboat-gentoo.git'
+      dest: "{{ lookup('env', 'HOME') }}/repos/newsboat-gentoo"
       recursive: yes
       update: yes
       accept_hostkey: yes
@@ -32,7 +32,7 @@
       - privatefiles
       - stow
   - name: Stow newsboat
-    shell: cd $HOME/repos/newsboat-repo && stow --target=/home/chris newsboat
+    shell: cd $HOME/repos/newsboat-gentoo && stow --target=/home/chris newsboat-gentoo
     tags:
       - install
       - privatefiles
@@ -40,8 +40,8 @@
 
   - name: Cloning fish history
     ansible.builtin.git:
-      repo: 'git@github.com:cmpi66/fish-history-arch.git'
-      dest: "{{ lookup('env', 'HOME') }}/repos/fish-history-arch"
+      repo: 'git@github.com:cmpi66/fish-history-gentoo.git'
+      dest: "{{ lookup('env', 'HOME') }}/repos/fish-history-gentoo"
       recursive: yes
       update: yes
       accept_hostkey: yes
@@ -51,7 +51,7 @@
       - privatefiles
       - stow
   - name: Stow fish history
-    shell: cd $HOME/repos && stow --target=/home/chris fish-history-arch
+    shell: cd $HOME/repos && stow --target=/home/chris fish-history-gentoo
     tags:
       - install
       - privatefiles
@@ -72,7 +72,7 @@
       - remote
 
   - name: add remote newsboat
-    shell: cd $HOME/repos/newsboat-repo && git remote rm origin && git remote add origin git@gitlab.com:chris-m/newsboat-repo.git && git remote set-url --add origin git@github.com:cmpi66/newsboat-repo.git 
+    shell: cd $HOME/repos/newsboat-gentoo && git remote rm origin && git remote add origin git@gitlab.com:chris-m/newsboat-gentoo.git && git remote set-url --add origin git@github.com:cmpi66/newsboat-gentoo.git 
     tags:
       - install
       - privatefiles
@@ -83,8 +83,8 @@
       - install
       - privatefiles
       - remote
-  - name: add remote fish-history-arch
-    shell: cd $HOME/repos/fish-history-arch && git remote rm origin && git remote add origin git@gitlab.com:chris-m/fish-history-arch.git && git remote set-url --add origin git@github.com:cmpi66/fish-history-arch.git 
+  - name: add remote fish-history-gentoo
+    shell: cd $HOME/repos/fish-history-gentoo && git remote rm origin && git remote add origin git@gitlab.com:chris-m/fish-history-gentoo.git && git remote set-url --add origin git@github.com:cmpi66/fish-history-gentoo.git 
     tags:
       - install
       - privatefiles

@@ -1,20 +1,10 @@
-- name: Update policy kit rules
-  become: true
-  shell: "cd /home/chris/repos/dotfiles/polkit && cp 49-nopasswd_global.rules /etc/polkit-1/rules.d/"
-  tags:
-    - install
-    - polkit
-    - system
-- name: Remove nano 
-  become: true
-  pacman:
-    name: ["nano", "nano-syntax-highlighting"]
-    state: absent
-  tags:
-    - install
-    - core
-    - nano
-    - system
+# - name: Update policy kit rules
+#   become: true
+#   shell: "cd /home/chris/repos/dotfiles/polkit && cp 49-nopasswd_global.rules /etc/polkit-1/rules.d/"
+#   tags:
+#     - install
+#     - polkit
+#     - system
 - name: Get root bashrc and export nvim to editor
   become: true
   shell: cp /etc/skel/.bashrc /root/.bashrc && echo "export EDITOR=lvim" >> /root/.bashrc
@@ -37,20 +27,6 @@
     - root-bash
     - system
 
-- name: Install pacman -Sy crontab
-  become: true
-  shell: cd /home/chris/repos/dotfiles/ && crontab sucron
-  tags:
-    - install
-    - cron
-    - system
-
-- name: user cron
-  shell: cd /home/chris/repos/dotfiles/ && crontab mycron
-  tags:
-    - install
-    - cron
-    - system
 
 
 # Will have to do these manually

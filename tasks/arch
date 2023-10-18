@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+# if [[ -z $STOW_FOLDERS ]]; then
+#     STOW_FOLDERS="alacritty,applications,apps,bat,dunst,dwmkeys,fish,fontconfig,icons,iprules,kitty,lf,lunarvim,lvim,mime,mpd,mpv,ncmpcpp,neo,neovim,office,picom,redshift,rofi,rofi-themes,scim,scriptsn,shell,starship,suckless,sxhkd,sxiv,tmux,user-dirs,x,zathura,zk,zsh,zshenv"
+# fi
+
+if [[ -z $STOW_FOLDERS ]]; then
+    STOW_FOLDERS="alacritty,applications,apps,atuin-config,bat,broot,dunst,dwmkeys,fish,firefox,fonts,fontconfig,icons,iprules,gtk-2.0,gtk-3.0,kitty,lf,lynx,gpg,homepage,hypr,lvim,mime,mpd,mpv,ncmpcpp,neo,neovim,nwg-look,office,picom,redshift,rofi,rofi-themes,scim,scriptsn,shell,starship,suckless,sxhkd,sxiv,task,tmux,user-dirs,vit,x11,xsettings,zathura,zk,zsh,zshenv,hyprland,waybar,gammastep,evremap,swaylock"
+fi
+
+if [[ -z $DOTFILES ]]; then
+    DOTFILES=$HOME/repos/dotfiles
+fi
+
+STOW_FOLDERS=$STOW_FOLDERS DOTFILES=$DOTFILES $DOTFILES/install
+

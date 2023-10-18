@@ -7,7 +7,7 @@
     - dotfiles
     - firefox
 - name: Run hardenwolf command
-  shell: cd $HOME/repos/dotfiles && ./hardenwolf
+  shell: ./hardenwolf
   tags:
     - install
     - dotfiles

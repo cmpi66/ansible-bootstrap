@@ -1,10 +1,10 @@
-- name: Clean up extra dirs and files
-  shell: cd ~/repos/dotfiles/ && ./removefiles 
-  tags:
-  - install
-  - cleanup
+# - name: Clean up extra dirs and files
+#   shell:  ./removefiles 
+#   tags:
+#   - install
+#   - cleanup
 - name: Remove default dirs and create new dirs
-  shell: "cd ~/repos/dotfiles/ && ./newdirs"
+  shell: "./newdirs"
   tags:
     - install
     - dirs
@@ -15,7 +15,7 @@
     - install
     - gnupg
 - name: Move npmrc and gnupgdir
-  shell: cd ~/repos/dotfiles/ && ./mvnpm
+  shell: ./mvnpm
   tags:
   - install
   - cleanup
