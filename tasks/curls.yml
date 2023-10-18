@@ -41,9 +41,11 @@
     - install
     - nix
     - curls
-- name: Install nix package emanote 
-  shell: ./ema
-  tags:
-    - install
-    - nix
-    - curls
+# - name: Install nix package emanote 
+#   shell: ./ema
+#   tags:
+#     - install
+#     - nix
+#     - curls
+
+## just do this manually
