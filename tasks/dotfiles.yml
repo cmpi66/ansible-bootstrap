@@ -11,7 +11,7 @@
     - dotfiles
     - stow
 - name: Stow dotfiles
-  shell: cd $HOME/repos/dotfiles && ./arch
+  shell: ./arch
   tags:
     - install
     - dotfiles
