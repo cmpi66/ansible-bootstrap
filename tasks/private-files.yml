@@ -32,7 +32,7 @@
       - privatefiles
       - stow
   - name: Stow newsboat
-    shell: cd $HOME/repos/newsboat-gentoo && stow --target=/home/chris newsboat-gentoo
+    shell: cd $HOME/repos/newsboat-gentoo && stow --target=/home/chris newsboat
     tags:
       - install
       - privatefiles
