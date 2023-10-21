@@ -29,3 +29,24 @@
     - install
     - dotfiles
     - gits
+- name: Clone evremaps
+  ansible.builtin.git:
+    repo: 'https://github.com/wez/evremap.git'
+    dest: "{{ lookup('env', 'HOME') }}/dl/git-clones/evremap"
+  tags:
+    - install
+    - dotfiles
+    - gits
+- name: Build evremaps
+  shell: cd /home/chris/dl/git-clones/evremap/ && cargo build --release
+  tags:
+    - install
+    - dotfiles
+    - gits
+- name: Move evremaps
+  become: true
+  shell: cd /home/chris/dl/git-clones/evremap/ && cp /home/chris/dl/git-clones/evremap/target/release/evremap /usr/local/bin/evremap
+  tags:
+    - install
+    - dotfiles
+    - gits
