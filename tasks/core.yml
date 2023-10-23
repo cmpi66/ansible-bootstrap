@@ -30,7 +30,7 @@
 - name: Install System Packages 3 
   become: true
   pacman:
-    name: ["redshift", "rclone", "ripgrep", "rofi", "sdcv", "shellcheck", "shfmt", "socat", "stylua", "sxiv", "syncthing", "task", "the_silver_searcher", "timew", "tk", "thunar", "tldr", "tmux", "transmission-cli", "tree", "unclutter", "unzip", "ueberzug", "urlscan", "usbguard", "usbguard-openrc", "vim", "vit", "wireguard-tools", "wget", "xcape", "xdotool", "xorg-xdpyinfo",  "xclip", "xkeycaps", "xorg-server", "xorg-xinput",  "xorg-server-xephyr", "xorg-xinit", "xorg-xwininfo", "xorg-xprop", "xorg-xeyes", "xorg-xev", "xorg-xset", "xorg-xsetroot", "xsel", "xwallpaper", "yt-dlp", "yubikey-manager", "zathura", "zathura-pdf-mupdf", "zk", "zoxide", "zbar" ]
+    name: ["redshift", "rclone", "ripgrep", "rofi", "sdcv", "shellcheck", "shfmt", "socat", "stylua", "sxiv", "syncthing", "task", "the_silver_searcher", "timew", "tk", "thunar", "tldr", "tmux", "transmission-cli", "tree", "unclutter", "unzip", "urlscan", "usbguard", "usbguard-openrc", "vim", "vit", "wireguard-tools", "wget", "xcape", "xdotool", "xorg-xdpyinfo",  "xclip", "xkeycaps", "xorg-server", "xorg-xinput",  "xorg-server-xephyr", "xorg-xinit", "xorg-xwininfo", "xorg-xprop", "xorg-xeyes", "xorg-xev", "xorg-xset", "xorg-xsetroot", "xsel", "xwallpaper", "yt-dlp", "yubikey-manager", "zathura", "zathura-pdf-mupdf", "zk", "zoxide", "zbar" ]
   tags:
     - install
     - neovim
