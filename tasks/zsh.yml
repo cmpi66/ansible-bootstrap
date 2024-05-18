@@ -6,7 +6,7 @@
     
 - name: Change shell to zsh
   become: true
-  shell: chsh -s $(which zsh) chris
+  shell: chsh -s $(which zsh) $(whoami)
   tags: *tags_for_zsh_tasks
 
 - name: Source zdotdir system wide

@@ -21,7 +21,7 @@
 - name: Install System Packages 2 
   become: true
   pacman:
-    name: ["keepassxc", "harfbuzz", "inkscape", "languagetool", "libmythes", "libreoffice-fresh", "libsecret", "libnotify", "lxappearance", "lynx", "maim",  "man-db", "meson", "moreutils", "mpc", "mpd", "mpv", "mtr", "mythes-en", "navi", "ncdu", "ncmpcpp", "net-tools", "newsboat", "noto-fonts", "noto-fonts-emoji", "okular", "pam-u2f",  "pandoc-cli", "pavucontrol", "pass-otp", "pipewire", "wireplumber", "pipewire-alsa", "pipewire-pulse", "polkit",  "pulsemixer", "pydf", "python-black", "python-netaddr", "python-pynvim"]
+    name: ["keepassxc", "harfbuzz", "inkscape", "languagetool", "libmythes", "libreoffice-fresh", "libsecret", "libnotify", "lxappearance", "lynx", "maim",  "man-db", "meson", "moreutils", "mpc", "mpd", "mpv", "mtr", "mythes-en", "navi", "ncdu", "ncmpcpp", "net-tools", "newsboat", "noto-fonts", "noto-fonts-emoji", "pam-u2f",  "pandoc-cli", "pavucontrol", "pass-otp", "pipewire", "wireplumber", "pipewire-alsa", "pipewire-pulse", "polkit",  "pulsemixer", "pydf", "python-black", "python-netaddr", "python-pynvim"]
   tags:
     - install
     - neovim
