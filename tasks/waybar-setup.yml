@@ -1,7 +1,7 @@
 - name: Get waybar prereqs
   become: true
   pacman:
-    name: ["chrono-date, gtk-layer-shell", "libappindicator-gtk3", "libdbusmenu-glib", "libdbusmenu-gtk3", "playerctl", "sndio", "spdlog", "scdoc", "catch2", "waybar"]
+    name: ["chrono-date", "gtk-layer-shell", "libappindicator-gtk3", "libdbusmenu-glib", "libdbusmenu-gtk3", "playerctl", "sndio", "spdlog", "scdoc", "catch2", "waybar"]
   tags:
     - install
     - waybar
