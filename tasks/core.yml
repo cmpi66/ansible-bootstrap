@@ -2,7 +2,7 @@
 - name: Install System Packages 1 
   become: true
   pacman:
-    name: ["alacritty", "arch-wiki-docs", "aspell-en", "argyllcms", "atuin", "bat", "barrier", "beamer", "bluez", "bluez-openrc", "bind", "bluez-utils", "brightnessctl", "broot", "calibre", "clipnotify", "codespell", "ctags", "cutefish-icons", "discord", "dog", "dunst", "ebook-tools", "entr", "eza", "fd", "firefox", "firejail", "flake8", "fontconfig", "foot", "ffmpeg", "fuse2", "fuse3", "fzf", "gimp", "gimp-plugin-gmic", "glow", "gnucash", "go", "jdk-openjdk"]
+    name: ["7zip", "alacritty", "arch-wiki-docs", "aspell-en", "argyllcms", "atuin", "bat", "beamer", "bluez", "bluez-openrc", "bind", "bluez-utils", "brightnessctl", "broot", "clipnotify", "codespell", "ctags", "cutefish-icons", "discord", "dog", "dunst", "ebook-tools", "entr", "eza", "fd", "firefox", "flake8", "fontconfig", "foot", "ffmpeg", "fuse2", "fuse3", "fzf", "gimp", "gimp-plugin-gmic", "glow", "go", "jdk-openjdk"]
   tags:
     - install
     - neovim
@@ -21,7 +21,7 @@
 - name: Install System Packages 2 
   become: true
   pacman:
-    name: ["keepassxc", "harfbuzz", "inkscape", "languagetool", "libmythes", "libreoffice-fresh", "libsecret", "libnotify", "lxappearance", "lynx", "maim",  "man-db", "meson", "mlocate", "moreutils", "mpc", "mpd", "mpv", "mtr", "mythes-en", "navi", "ncdu", "ncmpcpp", "net-tools", "newsboat", "nmap", "noto-fonts", "noto-fonts-emoji", "openresolv", "pam-u2f",  "pandoc-cli", "pavucontrol", "pass-otp", "pipewire", "wireplumber", "pipewire-alsa", "pipewire-pulse", "polkit",  "pulsemixer", "pydf", "python-black", "python-netaddr", "python-pynvim", "p7zip"]
+    name: ["keepassxc", "harfbuzz", "inkscape", "languagetool", "libmythes", "libreoffice-fresh", "libsecret", "libnotify", "lxappearance", "lynx", "maim",  "man-db", "meson", "mlocate", "moreutils", "mpc", "mpd", "mpv", "mtr", "mythes-en", "navi", "ncdu", "ncmpcpp", "net-tools", "nmap", "noto-fonts", "noto-fonts-emoji", "openresolv", "pam-u2f",  "pandoc-cli", "pavucontrol", "pass-otp", "pipewire", "wireplumber", "pipewire-alsa", "pipewire-pulse", "polkit",  "pulsemixer", "pydf", "python-black", "python-netaddr", "python-pynvim" ]
   tags:
     - install
     - neovim
@@ -30,7 +30,7 @@
 - name: Install System Packages 3 
   become: true
   pacman:
-    name: ["redshift", "rclone", "ripgrep", "rofi", "sdcv", "shellcheck", "shfmt", "simple-mtpfs", "socat", "stylua", "sxiv", "syncthing", "task", "tcpdump", "the_silver_searcher", "timew", "tk", "thunar", "tldr", "tmux", "traceroute", "transmission-cli", "texlive-latex", "texlive-binextra", "texlive-latexextra", "texlive-fontsextra", "texlive-fontsrecommended", "tree", "unclutter", "unzip", "urlscan", "usbguard", "usbguard-openrc", "vim", "vit", "wireguard-tools", "wget", "xcape", "xdotool", "xorg-xdpyinfo",  "xclip", "xkeycaps", "xorg-server", "xorg-xinput",  "xorg-server-xephyr", "xorg-xinit", "xorg-xwininfo", "xorg-xprop", "xorg-xeyes", "xorg-xev", "xorg-xset", "xorg-xsetroot", "xsel", "xwallpaper", "yt-dlp", "yubikey-manager", "whois", "zathura", "zathura-pdf-mupdf", "zk", "zoxide", "zbar" ]
+    name: ["redshift", "rclone", "ripgrep", "rofi", "sdcv", "shellcheck", "shfmt", "simple-mtpfs", "socat", "stylua", "sxiv", "syncthing", "task", "tcpdump", "the_silver_searcher", "timew", "tk", "thunar", "tldr", "tmux", "traceroute", "transmission-cli", "texlive-latex", "texlive-binextra", "texlive-latexextra", "texlive-fontsextra", "texlive-fontsrecommended", "tree", "unclutter", "unzip", "urlscan", "usbguard", "usbguard-openrc", "vim", "wireguard-tools", "wget", "xcape", "xdotool", "xorg-xdpyinfo",  "xclip", "xkeycaps", "xorg-server", "xorg-xinput",  "xorg-server-xephyr", "xorg-xinit", "xorg-xwininfo", "xorg-xprop", "xorg-xeyes", "xorg-xev", "xorg-xset", "xorg-xsetroot", "xsel", "xwallpaper", "yt-dlp", "yubikey-manager", "whois", "zathura", "zathura-pdf-mupdf", "zk", "zoxide", "zbar" ]
   tags:
     - install
     - neovim
@@ -39,7 +39,7 @@
 - name: Install Wayland Packages
   become: true
   pacman:
-    name: ["wlroots", "hyprland", "qt5-wayland", "qt6-wayland", "wofi", "bemenu", "bemenu-wayland", "swaybg", "fmt", "wl-clipboard", "cliphist", "gammastep", "swaylock", "wf-recorder", "papirus-icon-theme", "xdg-desktop-portal", "xdg-desktop-portal-lxqt", "xdg-desktop-portal-hyprland", "polkit-kde-agent", "grim", "slurp", "nwg-look", "swayidle", "wayland-protocols", "ydotool"]
+    name: ["wlroots", "hyprland", "qt5-wayland", "qt6-wayland", "bemenu", "bemenu-wayland", "swaybg", "fmt", "wl-clipboard", "cliphist", "gammastep", "swaylock", "wf-recorder", "xdg-desktop-portal", "xdg-desktop-portal-lxqt", "xdg-desktop-portal-hyprland", "polkit-kde-agent", "grim", "slurp", "nwg-look", "swayidle", "wayland-protocols", "ydotool"]
   tags:
     - install
     - neovim
