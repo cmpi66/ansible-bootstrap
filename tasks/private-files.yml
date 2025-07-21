@@ -19,24 +19,24 @@
       - privatefiles
       - stow
 
-  - name: Cloning newsboat
-    ansible.builtin.git:
-      repo: 'git@gitlab.com:chris-m/newsboat-repo.git'
-      dest: "{{ lookup('env', 'HOME') }}/repos/newsboat-repo"
-      recursive: yes
-      update: yes
-      accept_hostkey: yes
-      version: master
-    tags:
-      - install
-      - privatefiles
-      - stow
-  - name: Stow newsboat
-    shell: cd $HOME/repos/newsboat-repo && stow --target=/home/chris newsboat
-    tags:
-      - install
-      - privatefiles
-      - stow
+  # - name: Cloning newsboat
+  #   ansible.builtin.git:
+  #     repo: 'git@gitlab.com:chris-m/newsboat-repo.git'
+  #     dest: "{{ lookup('env', 'HOME') }}/repos/newsboat-repo"
+  #     recursive: yes
+  #     update: yes
+  #     accept_hostkey: yes
+  #     version: master
+  #   tags:
+  #     - install
+  #     - privatefiles
+  #     - stow
+  # - name: Stow newsboat
+  #   shell: cd $HOME/repos/newsboat-repo && stow --target=/home/chris newsboat
+  #   tags:
+  #     - install
+  #     - privatefiles
+  #     - stow
 
   - name: Cloning fish history
     ansible.builtin.git:
