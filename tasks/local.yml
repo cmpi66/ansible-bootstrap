@@ -26,7 +26,6 @@
     - import_tasks: curls.yml
     - import_tasks: system.yml
     - import_tasks: node.yml
-    - import_tasks: npm-packages.yml
     - import_tasks: aurpacks.yml
     - import_tasks: remove-sudo.yml
     - import_tasks: final-cleanup.yml

@@ -1,6 +1,0 @@
-# - name: Install "stylua" Rust package
-#   community.general.cargo:
-#     name: stylua
-#   tags:
-#     - install
-#     - cargo
