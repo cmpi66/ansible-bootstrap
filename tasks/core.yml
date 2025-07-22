@@ -39,7 +39,7 @@
 - name: Install Wayland Packages
   become: true
   pacman:
-    name: ["hyprland", "qt5-wayland", "qt6-wayland", "bemenu", "bemenu-wayland", "swaybg", "fmt", "wl-clipboard", "cliphist", "gammastep", "swaylock", "wf-recorder", "xdg-desktop-portal", "xdg-desktop-portal-lxqt", "xdg-desktop-portal-hyprland", "polkit-kde-agent", "grim", "slurp", "nwg-look", "swayidle", "wayland-protocols", "ydotool"]
+    name: ["hyprland", "qt5-wayland", "qt6-wayland", "bemenu", "bemenu-wayland", "swaybg", "fmt", "wl-clipboard", "cliphist", "gammastep", "swaylock", "wf-recorder", "xdg-desktop-portal", "xdg-desktop-portal-lxqt", "xdg-desktop-portal-hyprland", "polkit-kde-agent", "grim", "slurp", "nwg-look", "swayidle", "wayland-protocols", "yazi", "ydotool"]
   tags:
     - install
     - neovim
